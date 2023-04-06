@@ -7,13 +7,269 @@
     <link rel="stylesheet" href="./acsset/css/gird.css">
     <link rel="stylesheet" href="./acsset/css/style.css">
     <link rel="stylesheet" href="./acsset/font/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div id="wrapper">
         <!-- Header -->
         <header class="header">
-
+            <div class="header--top">
+                <div class="header-container__title">
+                    <p>Welcome to our online store!</p>
+                    <div class="header-container__title--right">
+                        <div class="language">
+                            <span>English (USD)</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul>
+                                <li>
+                                    <a href="">French(EUR)</a>
+                                </li>
+                                <li>
+                                    <a href="">Japanese(JPY)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="">
+                            Login or Register
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <div class="header-container">
+                <div class="header-nav">
+                    <div class="logo">
+                        <a href="">
+                            <img src="./acsset/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nav__search">
+                        <input type="text" name="" id="" placeholder="Search here">
+                        <label for="cate" class="nav__search--cate">
+                            <span>Accessories</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                            <input type="checkbox" name="" id="cate">
+                            <ul>
+                                <li>
+                                    <span>Accessories</span>
+                                </li>
+                                <li>
+                                    <span>Accents</span>
+                                </li>
+                                <li>
+                                    <span>Desks</span>
+                                </li>
+                                <li>
+                                    <span>Sofas</span>
+                                </li>
+                                <li>
+                                    <span>New Arrivals</span>
+                                </li>
+                                <li>
+                                    <span>Bedroom</span>
+                                </li>
+                            </ul>
+                        </label>
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="nav__right">
+                        <div class="nav__right-cart">
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                            <span>0</span>
+                            <div class="minicart">
+                                <h4>Shopping Cart</h4>
+                                <ul>
+                                    <li>
+                                        <div class="minicart__product">
+                                            <div class="minicart__product-img">
+                                                <img src="./acsset/img/item-minicart-2.jpg" alt="">
+                                            </div>
+                                            <div class="minicart__product-desc">
+                                                <a class="minicart__product-name">Bibliotheque</a>
+                                                <p>
+                                                    <a href="">Black</a>,
+                                                    <a href="">300ML</a>
+                                                </p>
+                                                <div class="minicart__product-act">
+                                                    <p>
+                                                        <span>$45</span>
+                                                        <span>(x1)</span>
+                                                    </p>
+                                                    <a href="">
+                                                        <i class="fa-regular fa-trash-can"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="minicart__product">
+                                            <div class="minicart__product-img">
+                                                <img src="./acsset/img/item-minicart-2.jpg" alt="">
+                                            </div>
+                                            <div class="minicart__product-desc">
+                                                <a class="minicart__product-name">Bibliotheque</a>
+                                                <p>
+                                                    <a href="">Black</a>,
+                                                    <a href="">300ML</a>
+                                                </p>
+                                                <div class="minicart__product-act">
+                                                    <p>
+                                                        <span>$45</span>
+                                                        <span>(x1)</span>
+                                                    </p>
+                                                    <a href="">
+                                                        <i class="fa-regular fa-trash-can"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="minicart__product">
+                                            <div class="minicart__product-img">
+                                                <img src="./acsset/img/item-minicart-2.jpg" alt="">
+                                            </div>
+                                            <div class="minicart__product-desc">
+                                                <a class="minicart__product-name">Bibliotheque</a>
+                                                <p>
+                                                    <a href="">Black</a>,
+                                                    <a href="">300ML</a>
+                                                </p>
+                                                <div class="minicart__product-act">
+                                                    <p>
+                                                        <span>$45</span>
+                                                        <span>(x1)</span>
+                                                    </p>
+                                                    <a href="">
+                                                        <i class="fa-regular fa-trash-can"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="minicart__bottom">
+                                    <p>
+                                        <span>Subtotal:</span>
+                                        <span>$135</span>
+                                    </p>
+                                    <div class="minicart__bottom-btns">
+                                        <a href="">view bag</a>
+                                        <a href="">checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav__right-account">
+                            <i class="fa-regular fa-user"></i>
+                            <div class="mini-login">
+                                <input type="radio" name="form" id="login" checked>
+                                <input type="radio" name="form" id="register">
+                                <div class="mini-login__tilte">
+                                    <label for="login">Login</label>
+                                    <label for="register">Register</label>
+                                </div>
+                                <div class="mini-login__login">
+                                    <form action="">
+                                        <input type="email" name="" id="" placeholder="Email">
+                                        <input type="password" name="" id="" placeholder="Password">
+                                        <label for="remember" class="remember-me">
+                                            <input type="checkbox" name="" id="remember">
+                                            <span>
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <label for="remember">Remember me</label>
+                                        </label>
+                                        <input type="submit" value="LOGIN">
+                                    </form>
+                                    <a href="">Lost your password?</a>
+                                </div>
+                                <div class="mini-login__register">
+                                    <form action="">
+                                        <input type="email" name="" id="" placeholder="Email">
+                                        <input type="password" name="" id="" placeholder="Password">
+                                        <input type="submit" value="REGISTER">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="header__menu-container">
+                    <ul>
+                        <div class="menu-container__category">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>all category</span>
+                            <ul>
+                                <li>
+                                    <a href="">New Arrivals</a>
+                                </li>
+                                <li>
+                                    <a href="">Hot sale</a>
+                                </li>
+                                <li>
+                                    <a href="">Accessories</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu-sub">
+                                        <li>
+                                            <a href="">Living</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accents</a>
+                                        </li>
+                                        <li>
+                                            <a href="">New Arrivals</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bedroom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Accents</a>
+                                </li>
+                                <li>
+                                    <a href="">Tables</a>
+                                </li>
+                                <li>
+                                    <a href="">Dining</a>
+                                </li>
+                                <li>
+                                    <a href="">Lighting</a>
+                                </li>
+                                <li>
+                                    <a href="">Office</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <li>
+                            <a href="">home</a>
+                        </li>
+                        <li>
+                            <a href="">shop</a>
+                        </li>
+                        <li>
+                            <a href="">pages</a>
+                        </li>
+                        <li>
+                            <a href="">blogs</a>
+                        </li>
+                        <li>
+                            <a href="">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <!-- Main -->
         <div class="main">
@@ -21,7 +277,7 @@
         </div>
         <!-- Footer -->
         <footer class="footer">
-            <div class="footer-container">
+            <!-- <div class="footer-container">
                 <div class="gird">
                     <div class="row">
                         <div class="col c-12 m-4 l-3">
@@ -70,9 +326,7 @@
                         </div>
                     </div>
                 </div>
-               
-                
-            </div>
+            </div> -->
         </footer>
     </div>
 </body>
