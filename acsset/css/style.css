@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+
+}
+
 #wrapper {
     
+}
+
+/* css for main */
+
+.main {
+    max-width: 1175px;
+    margin: 0 auto;
 }
 
 /* css for footer */
@@ -17,7 +28,6 @@
 .footer-container{
     max-width: 900px;
     margin:0 auto;
-
 }
 
 .footer-container__item{
@@ -26,9 +36,16 @@
     color: #191919;
     line-height: 26px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom:5px;
 }
 
+.footer-container__item h4 {
+    padding-bottom: 14px;
+}
+
+.footer-container__item li{
+    margin-bottom: 10px;
+}
 .footer-container__item ul {
     list-style: none;
 }

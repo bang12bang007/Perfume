@@ -1,0 +1,57 @@
+.main__title{
+    padding: 0 8px;
+    content:"/f101";
+    font-weight: 400;
+    display: flex;
+}
+
+.main__title li{
+    list-style: none;
+    
+}
+.main__title a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+.main-blog__sidebar {
+    min-height: 100px;
+}
+.icon {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    padding-top: 39px;
+    padding-bottom: 10px;
+    min-width: 47%;
+    margin-bottom: 10px; 
+}
+.icon a{
+    color: rgb(34,34,34);
+}
+.main-blog__container {
+    background-color:brown;
+    min-height: 500px
+}
+
+#sidebar-flw {
+    position: relative;
+    
+}
+#sidebar-flw h3{
+    padding-left: 25px;
+    text-transform: uppercase;
+    
+}
+
+#sidebar-flw::before {
+    content: "";
+    position:absolute;
+    display: block;
+    width: 23px;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
