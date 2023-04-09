@@ -3,7 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Title-Main */
+.main__title{
+    content:"/f101";
+    font-weight: 400;
+    display: flex;
+    padding: 34px 0 30px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    width:100%;
+}
+.main__title a{
+    text-decoration: none;
+    color:rgb(171,142,102);
+    margin-right: 35px;
+}
+.main__title span{
+    margin-right: 17px;
+    color:#ccc;
+    margin-left: -22px;
+    font-size: 8px;
+}
 body {
 
 }

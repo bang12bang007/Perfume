@@ -1,18 +1,4 @@
-.main__title{
-    padding: 0 8px;
-    content:"/f101";
-    font-weight: 400;
-    display: flex;
-}
 
-.main__title li{
-    list-style: none;
-    
-}
-.main__title a{
-    text-decoration: none;
-    margin-right: 15px;
-}
 .main-blog__sidebar {
     min-height: 100px;
 }
@@ -21,10 +7,9 @@
     display: flex;
     justify-content: space-between;
     font-size: 24px;
-    padding-top: 39px;
-    padding-bottom: 10px;
     min-width: 47%;
-    margin-bottom: 10px; 
+    margin-bottom: 50px;
+    margin-top: 25px; 
 }
 .icon a{
     color: rgb(34,34,34);
@@ -33,25 +18,37 @@
     background-color:brown;
     min-height: 500px
 }
-
+.sidebar{
+    padding-bottom: 25px;
+}
 #sidebar-flw {
     position: relative;
-    
+    margin-bottom: 25px;
 }
 #sidebar-flw h3{
-    padding-left: 25px;
+    padding-left: 35px;
     text-transform: uppercase;
-    
+    font-size: 14px;
 }
 
 #sidebar-flw::before {
     content: "";
     position:absolute;
     display: block;
-    width: 23px;
+    width: 25px;
     height: 2px;
-    background-color: #000;
+    background-color:rgb(171,142,102);
     left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
+#radio__sidebar li{
+    list-style: none;
+    margin-bottom:16px;
+}
+#radio__sidebar input{
+    display: none;
+    cursor: pointer;
+}
+
+
