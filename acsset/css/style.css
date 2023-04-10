@@ -8,7 +8,17 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+.mg-auto {
+    margin: 0 auto;
+}
 
+.f-right {
+    float: right;
+}
+
+.f-left {
+    float: left;
+}
 
 #wrapper {
     overflow: hidden;
@@ -24,11 +34,6 @@ body {
     width: 100%;
     background-color: #ab8e66;
     margin-bottom: 50px;
-}
-
-.header-container {
-    width: 1175px;
-    margin: 0 auto;
 }
 
 .header-container__title {
@@ -645,12 +650,6 @@ body {
 
 /* css for main */
 
-.main {
-    max-width: 1175px;
-    margin: 0 auto;
-}
-
-
 .banner {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -807,7 +806,7 @@ body {
    
 }
 
-.deal__title {
+.section__title {
     text-align: center;
     text-transform: uppercase;
     font-size: 28px;
@@ -816,7 +815,7 @@ body {
     margin-bottom: 70px;
 }
 
-.deal__title::after {
+.section__title::after {
     content: "";
     display: block;
     position: absolute;
@@ -1050,6 +1049,45 @@ body {
 .product-type > .active {
     background-color: #ab8e66;
 }
+
+.introduction {
+    background-color: #ab8e66;
+    margin-bottom: 70px;
+    margin-top: 34px;
+}
+
+.introduction__items {
+    display: flex;
+    width: 280px;
+}
+
+.introduction__container {
+    padding: 44px 0;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.introduction__items--icon {
+    font-size: 46px;
+    color: #fff;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.introduction__items--content > h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.introduction__items--content > p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 14px;
+    line-height: 1.6;
+}
+
 
 /* css for footer */
 .footer {
