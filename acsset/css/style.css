@@ -156,6 +156,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    z-index: 1;
 }
 
 .nav__search--cate ul li {
@@ -237,6 +238,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    z-index: 1;
 }
 
 .nav__right-cart:hover .minicart {
@@ -391,6 +393,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    z-index: 1;
 }
 
 .mini-login__tilte {
@@ -590,6 +593,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    z-index: 1;
 }
 
 .menu-container__category  ul li {
@@ -767,12 +771,12 @@ body {
     max-width: 161px;
 }
 
-.banner__right--img {
+.banner__img {
     width: 100%;
     height: 100%;
 }
 
-.banner__right--img img {
+.banner__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -800,7 +804,7 @@ body {
 }
 
 .deal {
-    margin-bottom: 60px;
+   
 }
 
 .deal__title {
@@ -967,6 +971,59 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%);
     visibility: visible;
+}
+
+.banner--second {
+    margin-top: 130px;
+}
+
+.banner--second .banner__content {
+    left: 40px;
+    max-width: 184px;
+}
+
+.banner--second .banner__item {
+    margin-bottom: 30px;
+}
+
+.banner--full {
+    text-align: center;
+}
+
+.banner--full .banner__content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 280px;
+}
+
+.banner--full .banner__content > h2 {
+    font-size: 32px;
+}
+
+.banner--full .banner__content > p {
+    font-size: 16px;
+    color: #959795;
+}
+
+.banner__price {
+    margin-top: -12px;
+}
+
+.banner__price > span:nth-child(2) {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ab8e66;
+}
+
+.banner__content > .banner__label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #ab8e66;
+}
+
+.banner__brand {
+    color: #ab8e66;
+    font-weight: 600;
 }
 
 /* css for footer */
