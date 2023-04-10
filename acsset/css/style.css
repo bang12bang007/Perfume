@@ -1026,6 +1026,31 @@ body {
     font-weight: 600;
 }
 
+.product-type {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.product-type > label {
+    color: #ffffff;
+    background-color: #000;
+    border-radius: 99999px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 20px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.product-home .product {
+    margin-bottom: 16px;
+}
+
+.product-type > .active {
+    background-color: #ab8e66;
+}
+
 /* css for footer */
 .footer {
     background-color: rgb(243,243,243);
