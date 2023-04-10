@@ -1116,7 +1116,7 @@ body {
     color: #000;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     display: inline-block;
 }
 
@@ -1130,6 +1130,56 @@ body {
 
 .news-posts__container .banner--link {
     opacity: 1;
+}
+
+.instagram-container {
+    border-top: 2px solid #eeeeee;
+    margin-top: 115px;
+    padding-top: 70px;
+}
+
+.instagram--icon {
+    font-size: 70px;
+    color: #ab8e66;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.instagram__items {
+    position:relative;
+    width: 100%;
+}
+
+.instagram__items--override {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .5s;
+    opacity: 0;
+}
+
+.instagram__items--override > i {
+    color: #fff;
+    font-size: 44px;
+}
+
+.instagram__items:hover .instagram__items--override{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.instagram__items img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* css for footer */

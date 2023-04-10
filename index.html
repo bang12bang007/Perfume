@@ -1141,6 +1141,47 @@
                 </section>
             </div>
         </div>
+        <div class="instagram-container">
+            <p class="instagram--icon">
+                <i class="fa-brands fa-instagram "></i>
+            </p>
+            <h2 class="section__title">
+                
+                instagram feed
+            </h2>
+            <div class="instagram__list">
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-1.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-2.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-3.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-4.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-5.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-container">
@@ -1257,6 +1298,40 @@
                 slidesToScroll: 3,
                 infinite: true,
                 dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    })
+    $('.instagram__list').slick({
+        dots: false,
+        infinite: false,
+        speed: 1200,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
             }
             },
             {
