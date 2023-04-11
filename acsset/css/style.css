@@ -29,6 +29,49 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+.checkbox--default {
+    position: relative;
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    width: max-content;
+    cursor: pointer;
+}
+
+.checkbox--default > input[type = "checkbox"] {
+    display: none;
+}
+
+.check-box-custom {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox--default span:nth-last-child(1) {
+    font-size: 15px;
+}
+
+.check-box-custom > i {
+    font-size: 12px;
+    color: #ab8e66;
+    opacity: 0;
+    transition: .3s;
+}
+
+.checkbox--default input[type = "checkbox"]:checked ~ .check-box-custom > i {
+    opacity: 1;
+}
+
 .mg-auto {
     margin: 0 auto;
 }

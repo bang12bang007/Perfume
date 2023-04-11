@@ -42,13 +42,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
-#radio__sidebar li{
-    list-style: none;
-    margin-bottom:16px;
-}
-#radio__sidebar input{
-    display: none;
-    cursor: pointer;
-}
+
+
 
 
