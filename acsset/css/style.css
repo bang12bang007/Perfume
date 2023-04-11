@@ -244,6 +244,42 @@ body {
     opacity: 1;
 }
 
+.pagination {
+    margin-bottom: 65px;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination li {
+    font-size: 17px;
+    font-weight: 500;
+    width: 42px;
+    height: 42px;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 4px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.pagination li i {
+    font-size: 13px;
+}
+
+.pagination li:hover,
+.pagination .active_pagination {
+    background-color: #ab8e66;
+    color: #fff;
+}
+
+
 #wrapper {
     overflow: hidden;
 }
