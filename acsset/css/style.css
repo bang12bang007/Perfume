@@ -502,7 +502,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-    z-index: 1;
+    z-index: 10;
 }
 
 .nav__right-cart:hover .minicart {
@@ -600,13 +600,13 @@ body {
     font-weight: 600;
 }
 
-.minicart__bottom-btns {
+.cart__bottom-btns {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.minicart__bottom-btns a {
+.cart__bottom-btns a {
     text-decoration: none;
     border: 1px solid #e3e3e3;
     background-color: #ab8e66;
@@ -625,13 +625,14 @@ body {
     font-size: 13px;
 }
 
-.minicart__bottom-btns a:nth-child(1) {
-    width: 138px;
+.cart__bottom-btns a:nth-child(1) {
+    min-width: 138px;
     background-color: #fff;
     color: #333333;
+    width: max-content;
 }
 
-.minicart__bottom-btns a:nth-child(1):hover {
+.cart__bottom-btns a:nth-child(1):hover {
     background-color: #ab8e66;
     color: #fff;
 }
@@ -657,7 +658,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-    z-index: 1;
+    z-index: 10;
 }
 
 .mini-login__tilte {
@@ -857,7 +858,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-    z-index: 1;
+    z-index: 10;
 }
 
 .menu-container__category  ul li {
