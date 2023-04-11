@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./acsset/css/style.css">
     <link rel="stylesheet" href="./acsset/font/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -38,163 +40,165 @@
                     </div>
                 </div>
             </div> 
-            <div class="header-container">
-                <div class="header-nav">
-                    <div class="logo">
-                        <a href="">
-                            <img src="./acsset/img/logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class="nav__search">
-                        <input type="text" name="" id="" placeholder="Search here">
-                        <label for="cate" class="nav__search--cate">
-                            <span>Accessories</span>
-                            <i class="fa-solid fa-caret-down"></i>
-                            <input type="checkbox" name="" id="cate">
-                            <ul>
-                                <li>
-                                    <span>Accessories</span>
-                                </li>
-                                <li>
-                                    <span>Accents</span>
-                                </li>
-                                <li>
-                                    <span>Desks</span>
-                                </li>
-                                <li>
-                                    <span>Sofas</span>
-                                </li>
-                                <li>
-                                    <span>New Arrivals</span>
-                                </li>
-                                <li>
-                                    <span>Bedroom</span>
-                                </li>
-                            </ul>
-                        </label>
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                    <div class="nav__right">
-                        <div class="nav__right-cart">
-                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                            <span>0</span>
-                            <div class="minicart">
-                                <h4>Shopping Cart</h4>
+            <div class="gird wide">
+                <div class="header-container">
+                    <div class="header-nav">
+                        <div class="logo">
+                            <a href="">
+                                <img src="./acsset/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="nav__search">
+                            <input type="text" name="" id="" placeholder="Search here">
+                            <label for="cate" class="nav__search--cate">
+                                <span>Accessories</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                                <input type="checkbox" name="" id="cate">
                                 <ul>
                                     <li>
-                                        <div class="minicart__product">
-                                            <div class="minicart__product-img">
-                                                <img src="./acsset/img/item-minicart-2.jpg" alt="">
-                                            </div>
-                                            <div class="minicart__product-desc">
-                                                <a class="minicart__product-name">Bibliotheque</a>
-                                                <p>
-                                                    <a href="">Black</a>,
-                                                    <a href="">300ML</a>
-                                                </p>
-                                                <div class="minicart__product-act">
-                                                    <p>
-                                                        <span>$45</span>
-                                                        <span>(x1)</span>
-                                                    </p>
-                                                    <a href="">
-                                                        <i class="fa-regular fa-trash-can"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <span>Accessories</span>
                                     </li>
                                     <li>
-                                        <div class="minicart__product">
-                                            <div class="minicart__product-img">
-                                                <img src="./acsset/img/item-minicart-2.jpg" alt="">
-                                            </div>
-                                            <div class="minicart__product-desc">
-                                                <a class="minicart__product-name">Bibliotheque</a>
-                                                <p>
-                                                    <a href="">Black</a>,
-                                                    <a href="">300ML</a>
-                                                </p>
-                                                <div class="minicart__product-act">
-                                                    <p>
-                                                        <span>$45</span>
-                                                        <span>(x1)</span>
-                                                    </p>
-                                                    <a href="">
-                                                        <i class="fa-regular fa-trash-can"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <span>Accents</span>
                                     </li>
                                     <li>
-                                        <div class="minicart__product">
-                                            <div class="minicart__product-img">
-                                                <img src="./acsset/img/item-minicart-2.jpg" alt="">
-                                            </div>
-                                            <div class="minicart__product-desc">
-                                                <a class="minicart__product-name">Bibliotheque</a>
-                                                <p>
-                                                    <a href="">Black</a>,
-                                                    <a href="">300ML</a>
-                                                </p>
-                                                <div class="minicart__product-act">
-                                                    <p>
-                                                        <span>$45</span>
-                                                        <span>(x1)</span>
-                                                    </p>
-                                                    <a href="">
-                                                        <i class="fa-regular fa-trash-can"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <span>Desks</span>
+                                    </li>
+                                    <li>
+                                        <span>Sofas</span>
+                                    </li>
+                                    <li>
+                                        <span>New Arrivals</span>
+                                    </li>
+                                    <li>
+                                        <span>Bedroom</span>
                                     </li>
                                 </ul>
-                                <div class="minicart__bottom">
-                                    <p>
-                                        <span>Subtotal:</span>
-                                        <span>$135</span>
-                                    </p>
-                                    <div class="minicart__bottom-btns">
-                                        <a href="">view bag</a>
-                                        <a href="">checkout</a>
+                            </label>
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="nav__right">
+                            <div class="nav__right-cart">
+                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                <span>0</span>
+                                <div class="minicart">
+                                    <h4>Shopping Cart</h4>
+                                    <ul>
+                                        <li>
+                                            <div class="minicart__product">
+                                                <div class="minicart__product-img">
+                                                    <img src="./acsset/img/item-minicart-2.jpg" alt="">
+                                                </div>
+                                                <div class="minicart__product-desc">
+                                                    <a class="minicart__product-name">Bibliotheque</a>
+                                                    <p>
+                                                        <a href="">Black</a>,
+                                                        <a href="">300ML</a>
+                                                    </p>
+                                                    <div class="minicart__product-act">
+                                                        <p>
+                                                            <span>$45</span>
+                                                            <span>(x1)</span>
+                                                        </p>
+                                                        <a href="">
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="minicart__product">
+                                                <div class="minicart__product-img">
+                                                    <img src="./acsset/img/item-minicart-2.jpg" alt="">
+                                                </div>
+                                                <div class="minicart__product-desc">
+                                                    <a class="minicart__product-name">Bibliotheque</a>
+                                                    <p>
+                                                        <a href="">Black</a>,
+                                                        <a href="">300ML</a>
+                                                    </p>
+                                                    <div class="minicart__product-act">
+                                                        <p>
+                                                            <span>$45</span>
+                                                            <span>(x1)</span>
+                                                        </p>
+                                                        <a href="">
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="minicart__product">
+                                                <div class="minicart__product-img">
+                                                    <img src="./acsset/img/item-minicart-2.jpg" alt="">
+                                                </div>
+                                                <div class="minicart__product-desc">
+                                                    <a class="minicart__product-name">Bibliotheque</a>
+                                                    <p>
+                                                        <a href="">Black</a>,
+                                                        <a href="">300ML</a>
+                                                    </p>
+                                                    <div class="minicart__product-act">
+                                                        <p>
+                                                            <span>$45</span>
+                                                            <span>(x1)</span>
+                                                        </p>
+                                                        <a href="">
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="minicart__bottom">
+                                        <p>
+                                            <span>Subtotal:</span>
+                                            <span>$135</span>
+                                        </p>
+                                        <div class="minicart__bottom-btns">
+                                            <a href="">view bag</a>
+                                            <a href="">checkout</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="nav__right-account">
-                            <i class="fa-regular fa-user"></i>
-                            <div class="mini-login">
-                                <input type="radio" name="form" id="login" checked>
-                                <input type="radio" name="form" id="register">
-                                <div class="mini-login__tilte">
-                                    <label for="login">Login</label>
-                                    <label for="register">Register</label>
-                                </div>
-                                <div class="mini-login__login">
-                                    <form action="">
-                                        <input type="email" name="" id="" placeholder="Email">
-                                        <input type="password" name="" id="" placeholder="Password">
-                                        <label for="remember" class="remember-me">
-                                            <input type="checkbox" name="" id="remember">
-                                            <span>
-                                                <i class="fa-solid fa-check"></i>
-                                            </span>
-                                            <label for="remember">Remember me</label>
-                                        </label>
-                                        <input type="submit" value="LOGIN">
-                                    </form>
-                                    <a href="">Lost your password?</a>
-                                </div>
-                                <div class="mini-login__register">
-                                    <form action="">
-                                        <input type="email" name="" id="" placeholder="Email">
-                                        <input type="password" name="" id="" placeholder="Password">
-                                        <input type="submit" value="REGISTER">
-                                    </form>
+                            <div class="nav__right-account">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="mini-login">
+                                    <input type="radio" name="form" id="login" checked>
+                                    <input type="radio" name="form" id="register">
+                                    <div class="mini-login__tilte">
+                                        <label for="login">Login</label>
+                                        <label for="register">Register</label>
+                                    </div>
+                                    <div class="mini-login__login">
+                                        <form action="">
+                                            <input type="email" name="" id="" placeholder="Email">
+                                            <input type="password" name="" id="" placeholder="Password">
+                                            <label for="remember" class="remember-me">
+                                                <input type="checkbox" name="" id="remember">
+                                                <span>
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span>
+                                                <label for="remember">Remember me</label>
+                                            </label>
+                                            <input type="submit" value="LOGIN">
+                                        </form>
+                                        <a href="">Lost your password?</a>
+                                    </div>
+                                    <div class="mini-login__register">
+                                        <form action="">
+                                            <input type="email" name="" id="" placeholder="Email">
+                                            <input type="password" name="" id="" placeholder="Password">
+                                            <input type="submit" value="REGISTER">
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -273,11 +277,922 @@
         </header>
         <!-- Main -->
         <div class="main">
-            
+            <div class="gird wide">
+                <section class="banner">
+                    <div class="gird">
+                        <div class="row">
+                            <div class="col c-12 m-12 l-8">
+                                <ul class="slider">
+                                    <li class="slider__container">
+                                        <div class="slider__img">
+                                            <img src="./acsset/img/slider-thumb6.jpg" alt="">
+                                        </div>
+                                        <div class="slider__content">
+                                            <h3 class="slider__content--title">stelina best collection</h3>
+                                            <p class="slider__content--desc">A Range Of Perfume</p>
+                                            <p class="slider__content--price">
+                                                <span>New Price: </span>
+                                                <span>$250.00</span>
+                                            </p>
+                                            <a href="" class="banner--link">
+                                                Shop now
+                                                <span></span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slider__container">
+                                        <div class="slider__img">
+                                            <img src="./acsset/img/slider-thumb5.jpg" alt="">
+                                        </div>
+                                        <div class="slider__content">
+                                            <h3 class="slider__content--title">take a perfume</h3>
+                                            <p class="slider__content--desc">Up to 25% Off Order Now</p>
+                                            <p class="slider__content--price">
+                                                <span>Save Price: </span>
+                                                <span>$170.00</span>
+                                            </p>
+                                            <a href="" class="banner--link">
+                                                Shop now
+                                                <span></span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="slider__container">
+                                        <div class="slider__img">
+                                            <img src="./acsset/img/slider-thumb4.jpg" alt="">
+                                        </div>
+                                        <div class="slider__content">
+                                            <h3 class="slider__content--title">sale up to 40% off</h3>
+                                            <p class="slider__content--desc">Spring Summer Collection</p>
+                                            <p class="slider__content--price">
+                                                <span>New Price: </span>
+                                                <span>$270.00</span>
+                                            </p>
+                                            <a href="" class="banner--link">
+                                                Shop now
+                                                <span></span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col c-12 m-12 l-4">
+                                <div class="row banner__right">
+                                    <div class="col c-12 m-6 l-12">
+                                        <div class="banner__item mg-b-13">
+                                            <div class="banner__img">
+                                                <img src="./acsset/img/banner-home-5.jpg" alt="">
+                                            </div>
+                                            <div class="banner__content">
+                                                <h2>Pick Your Items</h2>
+                                                <p>Adipiscing elit curabitur senectus sem</p>
+                                                <a class="banner--link" href="">
+                                                    Shop now
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col c-12 m-6 l-12">
+                                        <div class="banner__item">
+                                            <div class="banner__img">
+                                                <img src="./acsset/img/banner-home-6.jpg" alt="">
+                                            </div>
+                                            <div class="banner__content">
+                                                <h2>Best Of Products</h2>
+                                                <p>Cras pulvinar loresum dolor conse</p>
+                                                <span>$379.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="banner__right">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="deal">
+                    <h2 class="section__title">deal of the day</h2>
+                    <div class="gird">
+                        <ul class="deal__container row">
+                            <li class="deal__items">
+                                <div class="product">
+                                    <span class="product__label">New</span>
+                                    <div class="product__img-link">
+                                        <a href="#" class="product__img">
+                                            <img src="./acsset/img/product-item-17.jpg" alt="">
+                                        </a>
+                                        <div class="product__action">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__time">
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="product__name">Glorious Eau</h3>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price--old">$65</span>
+                                            <span class="product__price--new">$45</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="deal__items">
+                                <div class="product">
+                                    <span class="product__label">New</span>
+                                    <div class="product__img-link">
+                                        <a href="#" class="product__img">
+                                            <img src="./acsset/img/product-item-21.jpg" alt="">
+                                        </a>
+                                        <div class="product__action">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__time">
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="product__name">Bibliotheque</h3>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price--old">$65</span>
+                                            <span class="product__price--new">$45</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="deal__items">
+                                <div class="product">
+                                    <span class="product__label">New</span>
+                                    <div class="product__img-link">
+                                        <a href="#" class="product__img">
+                                            <img src="./acsset/img/product-item-20.jpg" alt="">
+                                        </a>
+                                        <div class="product__action">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__time">
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="product__name">Dunas De un</h3>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price--old">$65</span>
+                                            <span class="product__price--new">$45</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="deal__items">
+                                <div class="product">
+                                    <span class="product__label">New</span>
+                                    <div class="product__img-link">
+                                        <a href="#" class="product__img">
+                                            <img src="./acsset/img/product-item-22.jpg" alt="">
+                                        </a>
+                                        <div class="product__action">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__time">
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="product__name">Cuerpo Eau</h3>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price--old">$65</span>
+                                            <span class="product__price--new">$45</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="deal__items">
+                                <div class="product">
+                                    <span class="product__label">New</span>
+                                    <div class="product__img-link">
+                                        <a href="#" class="product__img">
+                                            <img src="./acsset/img/product-item-19.jpg" alt="">
+                                        </a>
+                                        <div class="product__action">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__time">
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="product__name">Graceful Diamond</h3>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price--old">$65</span>
+                                            <span class="product__price--new">$45</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="deal__items">
+                                <div class="product">
+                                    <span class="product__label">New</span>
+                                    <div class="product__img-link">
+                                        <a href="#" class="product__img">
+                                            <img src="./acsset/img/product-item-18.jpg" alt="">
+                                        </a>
+                                        <div class="product__action">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__time">
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                            <div class="product__time-items">
+                                                <span>00</span>
+                                                <span>days</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="product__name">Gaden A Winter</h3>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price--old">$65</span>
+                                            <span class="product__price--new">$45</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="banner banner--second">
+                    <div class="gird">
+                        <div class="row">
+                            <div class="col c-12 m-12 l-6">
+                                <div class="banner__item">
+                                    <div class="banner__img">
+                                        <img src="./acsset/img/banner-home-2.jpg" alt="">
+                                    </div>
+                                    <div class="banner__content">
+                                        <p class="banner__label">TOP STAFF PICK</p>
+                                        <h2>Best Collection</h2>
+                                        <p>Proin interdum magna primis id consequat</p>
+                                        <a class="banner--link" href="">
+                                            Shop now
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col c-12 m-12 l-6">
+                                <div class="banner__item">
+                                    <div class="banner__img">
+                                        <img src="./acsset/img/banner-home-3.jpg" alt="">
+                                    </div>
+                                    <div class="banner__content">
+                                        <h2>Maybe You’ve Earned It</h2>
+                                        <p>Use code: <span class="banner__brand" >STELINA</span> Get 25% Off for all items!</p>
+                                        <a class="banner--link" href="">
+                                            Shop now
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col c-12 m-12 l-12">
+                                <div class="banner__item banner--full">
+                                    <div class="banner__img">
+                                        <img src="./acsset/img/banner-home-15.jpg" alt="">
+                                    </div>
+                                    <div class="banner__content">
+                                        <h2>Collection Arrived</h2>
+                                        <p>You have no items & Are you ready to use? come & shop with us!</p>
+                                        <p class="banner__price">
+                                            <span>Price from:</span>
+                                            <span>$45.00</span>
+                                        </p>
+                                        <a class="banner--link" href="">
+                                            Shop now
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="product-home">
+                    <div class="product-type">
+                        <label class="active" for="">Bestseller</label>
+                        <label for="">New Arrivals</label>
+                        <label for="">Top Rated</label>
+                    </div>
+                    <div class="product-home__container">
+                        <div class="gird">
+                            <div class="row">
+                                <div class="col c-6 m-4 l-3">
+                                    <div class="product">
+                                        <span class="product__label">New</span>
+                                        <div class="product__img-link">
+                                            <a href="#" class="product__img">
+                                                <img src="./acsset/img/product-item-17.jpg" alt="">
+                                            </a>
+                                            <div class="product__action">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__name">Glorious Eau</h3>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="product__price">
+                                                <span class="product__price--old">$65</span>
+                                                <span class="product__price--new">$45</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col c-6 m-4 l-3">
+                                    <div class="product">
+                                        <span class="product__label">New</span>
+                                        <div class="product__img-link">
+                                            <a href="#" class="product__img">
+                                                <img src="./acsset/img/product-item-17.jpg" alt="">
+                                            </a>
+                                            <div class="product__action">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__name">Glorious Eau</h3>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="product__price">
+                                                <span class="product__price--old">$65</span>
+                                                <span class="product__price--new">$45</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col c-6 m-4 l-3">
+                                    <div class="product">
+                                        <span class="product__label">New</span>
+                                        <div class="product__img-link">
+                                            <a href="#" class="product__img">
+                                                <img src="./acsset/img/product-item-17.jpg" alt="">
+                                            </a>
+                                            <div class="product__action">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__name">Glorious Eau</h3>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="product__price">
+                                                <span class="product__price--old">$65</span>
+                                                <span class="product__price--new">$45</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col c-6 m-4 l-3">
+                                    <div class="product">
+                                        <span class="product__label">New</span>
+                                        <div class="product__img-link">
+                                            <a href="#" class="product__img">
+                                                <img src="./acsset/img/product-item-17.jpg" alt="">
+                                            </a>
+                                            <div class="product__action">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__name">Glorious Eau</h3>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="product__price">
+                                                <span class="product__price--old">$65</span>
+                                                <span class="product__price--new">$45</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col c-6 m-4 l-3">
+                                    <div class="product">
+                                        <span class="product__label">New</span>
+                                        <div class="product__img-link">
+                                            <a href="#" class="product__img">
+                                                <img src="./acsset/img/product-item-17.jpg" alt="">
+                                            </a>
+                                            <div class="product__action">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__name">Glorious Eau</h3>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="product__price">
+                                                <span class="product__price--old">$65</span>
+                                                <span class="product__price--new">$45</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col c-6 m-4 l-3">
+                                    <div class="product">
+                                        <span class="product__label">New</span>
+                                        <div class="product__img-link">
+                                            <a href="#" class="product__img">
+                                                <img src="./acsset/img/product-item-17.jpg" alt="">
+                                            </a>
+                                            <div class="product__action">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__name">Glorious Eau</h3>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="product__price">
+                                                <span class="product__price--old">$65</span>
+                                                <span class="product__price--new">$45</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col c-6 m-4 l-3">
+                                    <div class="product">
+                                        <span class="product__label">New</span>
+                                        <div class="product__img-link">
+                                            <a href="#" class="product__img">
+                                                <img src="./acsset/img/product-item-17.jpg" alt="">
+                                            </a>
+                                            <div class="product__action">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__name">Glorious Eau</h3>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="product__price">
+                                                <span class="product__price--old">$65</span>
+                                                <span class="product__price--new">$45</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col c-6 m-4 l-3">
+                                    <div class="product">
+                                        <span class="product__label">New</span>
+                                        <div class="product__img-link">
+                                            <a href="#" class="product__img">
+                                                <img src="./acsset/img/product-item-17.jpg" alt="">
+                                            </a>
+                                            <div class="product__action">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h3 class="product__name">Glorious Eau</h3>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <p class="product__price">
+                                                <span class="product__price--old">$65</span>
+                                                <span class="product__price--new">$45</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="introduction">
+            <div class="introduction__container">
+                <div class="gird">
+                    <div class="row">
+                        <div class="col c-12 m-4 l-4">
+                            <div class="introduction__items">
+                                <p class="introduction__items--icon">
+                                    <i class="fa-solid fa-rocket"></i>
+                                </p>
+                                <div class="introduction__items--content">
+                                    <h3>EU FREE DELIVERY</h3>
+                                    <p>Free Delivery on all order from EU with price more than $90.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col c-12 m-4 l-4">
+                            <div class="introduction__items mg-auto">
+                                <p class="introduction__items--icon">
+                                    <i class="fa-solid fa-rotate-left"></i>
+                                </p>
+                                <div class="introduction__items--content">
+                                    <h3>EU FREE DELIVERY</h3>
+                                    <p>Free Delivery on all order from EU with price more than $90.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col c-12 m-4 l-4">
+                            <div class="introduction__items f-right">
+                                <p class="introduction__items--icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </p>
+                                <div class="introduction__items--content">
+                                    <h3>EU FREE DELIVERY</h3>
+                                    <p>Free Delivery on all order from EU with price more than $90.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main">
+            <div class="gird wide">
+                <section class="news">
+                    <h2 class="section__title">ours latest news</h2>
+                    <div class="gird">
+                        <ul class="news__list row">
+                            <li class="news__items">
+                                <div class="news-posts__container">
+                                    <div class="news-posts__img">
+                                        <img src="./acsset/img/slider-blog-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-posts__content">
+                                        <p class="news-posts__content--time">
+                                            <span>august 17</span>,
+                                            <span>09:14 AM</span>
+                                        </p>
+                                        <a href="" class="news-posts__content--title">We bring you the best</a>
+                                        <p class="news-posts__content--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?</p>
+                                        <a href="" class="banner--link">
+                                            read more
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news__items">
+                                <div class="news-posts__container">
+                                    <div class="news-posts__img">
+                                        <img src="./acsset/img/slider-blog-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-posts__content">
+                                        <p class="news-posts__content--time">
+                                            <span>august 17</span>,
+                                            <span>09:14 AM</span>
+                                        </p>
+                                        <a href="" class="news-posts__content--title">We bring you the best</a>
+                                        <p class="news-posts__content--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?</p>
+                                        <a href="" class="banner--link">
+                                            read more
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news__items">
+                                <div class="news-posts__container">
+                                    <div class="news-posts__img">
+                                        <img src="./acsset/img/slider-blog-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-posts__content">
+                                        <p class="news-posts__content--time">
+                                            <span>august 17</span>,
+                                            <span>09:14 AM</span>
+                                        </p>
+                                        <a href="" class="news-posts__content--title">We bring you the best</a>
+                                        <p class="news-posts__content--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?</p>
+                                        <a href="" class="banner--link">
+                                            read more
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news__items">
+                                <div class="news-posts__container">
+                                    <div class="news-posts__img">
+                                        <img src="./acsset/img/slider-blog-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-posts__content">
+                                        <p class="news-posts__content--time">
+                                            <span>august 17</span>,
+                                            <span>09:14 AM</span>
+                                        </p>
+                                        <a href="" class="news-posts__content--title">We bring you the best</a>
+                                        <p class="news-posts__content--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?</p>
+                                        <a href="" class="banner--link">
+                                            read more
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news__items">
+                                <div class="news-posts__container">
+                                    <div class="news-posts__img">
+                                        <img src="./acsset/img/slider-blog-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-posts__content">
+                                        <p class="news-posts__content--time">
+                                            <span>august 17</span>,
+                                            <span>09:14 AM</span>
+                                        </p>
+                                        <a href="" class="news-posts__content--title">We bring you the best</a>
+                                        <p class="news-posts__content--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?</p>
+                                        <a href="" class="banner--link">
+                                            read more
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news__items">
+                                <div class="news-posts__container">
+                                    <div class="news-posts__img">
+                                        <img src="./acsset/img/slider-blog-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-posts__content">
+                                        <p class="news-posts__content--time">
+                                            <span>august 17</span>,
+                                            <span>09:14 AM</span>
+                                        </p>
+                                        <a href="" class="news-posts__content--title">We bring you the best</a>
+                                        <p class="news-posts__content--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?</p>
+                                        <a href="" class="banner--link">
+                                            read more
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news__items">
+                                <div class="news-posts__container">
+                                    <div class="news-posts__img">
+                                        <img src="./acsset/img/slider-blog-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-posts__content">
+                                        <p class="news-posts__content--time">
+                                            <span>august 17</span>,
+                                            <span>09:14 AM</span>
+                                        </p>
+                                        <a href="" class="news-posts__content--title">We bring you the best</a>
+                                        <p class="news-posts__content--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?</p>
+                                        <a href="" class="banner--link">
+                                            read more
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="instagram-container">
+            <p class="instagram--icon">
+                <i class="fa-brands fa-instagram "></i>
+            </p>
+            <h2 class="section__title">
+                
+                instagram feed
+            </h2>
+            <div class="instagram__list">
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-1.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-2.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-3.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-4.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+                <div class="instagram__items">
+                    <img src="./acsset/img/item-instagram-5.jpg" alt="">
+                    <div class="instagram__items--override">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Footer -->
         <footer class="footer">
-            <!-- <div class="footer-container">
+            <div class="footer-container">
                 <div class="gird">
                     <div class="row">
                         <div class="col c-12 m-4 l-3">
@@ -326,8 +1241,125 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </footer>
     </div>
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.slider').slick({
+        infinite: true,
+        dots: true,
+        speed: 1200,
+        useTransform: true,
+        autoplay:true,
+        autoplaySpeed: 5000,
+        cssEase: 'ease-out',
+    });
+    $('.deal__container').slick({
+    dots: true,
+    infinite: false,
+    speed: 1200,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+        {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+    });
+    $('.news__list').slick({
+        dots: true,
+        infinite: false,
+        speed: 1200,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    })
+    $('.instagram__list').slick({
+        dots: false,
+        infinite: false,
+        speed: 1200,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    })
+</script>
 </html>
