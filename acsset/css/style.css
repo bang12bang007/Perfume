@@ -1,32 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.mg-auto {
+    margin: 0 auto;
+}
+
+.f-right {
+    float: right;
+}
+
+.f-left {
+    float: left;
+}
+
+.mg-b-13 {
+    margin-bottom: 13px;
+}
+
+.mg-r-14 {
+    margin-right: 14px;
+}
+
+.tranform-translateX-3 {
+    transform: translateX(-3px);
+}
+
 /* Title-Main */
 .main__title{
-    content:"/f101";
-    font-weight: 400;
     display: flex;
     padding: 34px 0 30px;
-    list-style: none;
     font-weight: 500;
     font-size: 14px;
     width:100%;
+    align-items: center;
 }
-.main__title a{
+.main__title .main__title--link{
     text-decoration: none;
-    color:rgb(171,142,102);
-    margin-right: 35px;
+    color:#888888;
+    margin-right: 14px;
 }
+
+.main__title--link:hover {
+    color: #ab8e66;
+}
+
 .main__title span{
-    margin-right: 17px;
-    color:#ccc;
-    margin-left: -22px;
     font-size: 8px;
+    color: #ccc;
 }
-body {
-    font-family: 'Jost', sans-serif;
+
+.main__title--current {
+
+}
+
+.sidebar-flw {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.sidebar-flw h3{
+    padding-left: 35px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sidebar-flw::before {
+    content: "";
+    position:absolute;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color:rgb(171,142,102);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .checkbox--default {
@@ -50,7 +105,7 @@ body {
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
-    border: 1px solid #ccc;
+    border: 1px solid #eeeeee;
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -59,6 +114,7 @@ body {
 
 .checkbox--default span:nth-last-child(1) {
     font-size: 15px;
+    color: #555;
 }
 
 .check-box-custom > i {
@@ -70,22 +126,6 @@ body {
 
 .checkbox--default input[type = "checkbox"]:checked ~ .check-box-custom > i {
     opacity: 1;
-}
-
-.mg-auto {
-    margin: 0 auto;
-}
-
-.f-right {
-    float: right;
-}
-
-.f-left {
-    float: left;
-}
-
-.mg-b-13 {
-    margin-bottom: 13px;
 }
 
 #wrapper {
@@ -105,7 +145,6 @@ body {
 }
 
 .header-container__title {
-    width: 1175px;
     display: flex;
     align-items: center;
     justify-content: space-between;
