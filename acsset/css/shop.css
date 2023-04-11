@@ -1,0 +1,7 @@
+.active > a > i{
+    opacity: 1;
+}
+
+.active > a {
+    color: #000;
+}
