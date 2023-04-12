@@ -3,10 +3,9 @@
 }
 
 .checkout__wrapper {
-    border-top: 1px solid #eeeeee;
     padding-top: 45px;
     padding-bottom: 50px;
-    border-bottom: 1px solid #eeeeee;
+    border: 1px solid #eeeeee;
 }
 
 .checkout__section--container {

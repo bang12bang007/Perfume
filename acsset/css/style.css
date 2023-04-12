@@ -631,12 +631,12 @@ body {
     font-weight: 600;
 }
 
-.btn--primary{
+.group--btn{
     margin-top: 20px;
     display: flex;
 }
 
-.btn--primary a {
+.group--btn .btn--primary {
     text-decoration: none;
     border: 1px solid #e3e3e3;
     background-color: #ab8e66;
@@ -657,12 +657,12 @@ body {
     min-width: 111px;
 }
 
-.btn--primary a:hover {
+.group--btn .btn--primary:hover {
     background-color: #ab8e66;
     color: #fff;
 }
 
-.btn--primary .btn--bg-white {
+.group--btn .btn--bg-white {
     background-color: #fff;
     color: #333333;
 }
