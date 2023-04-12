@@ -11,7 +11,8 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Header -->
+   <div id="wrapper">
+         <!-- Header -->
     <header class="header">
         <div class="header--top">
             <div class="gird wide">
@@ -154,8 +155,8 @@
                                         <span>Subtotal:</span>
                                         <span>$135</span>
                                     </p>
-                                    <div class="cart__bottom-btns">
-                                        <a href="">view bag</a>
+                                    <div class="btn--primary">
+                                        <a class="btn--bg-white flex-1 mg-r-10" href="">view bag</a>
                                         <a href="">checkout</a>
                                     </div>
                                 </div>
@@ -278,7 +279,7 @@
                     <span class="mg-r-14 tranform-translateX-3"><i class="fa-solid fa-chevron-right"></i></span>
                     <p class="main__title--current">Shopping Cart</p>
                 </div>
-                <h3 class="cart--title">shopping cart</h3>
+                <h3 class="custom--title">shopping cart</h3>
                 <div class="cart__product">
                     <ul class="cart__product-list">
                         <li class="cart__product-items">
@@ -355,22 +356,24 @@
                         </li>
                     </ul>
                 </div>
-                <div class="cart__checkout">
-                    <div class="coupon-code">
-                        <span>Coupon Code: </span>
-                        <div class="coupon-code__input">
-                            <input type="text" name="" id="" placeholder="Promotion code here">
-                            <i class="fa-solid fa-arrow-right"></i>
+                <div class="cart__checkout--container">
+                    <div class="cart__checkout">
+                        <div class="coupon-code">
+                            <span>Coupon Code: </span>
+                            <div class="coupon-code__input">
+                                <input type="text" name="" id="" placeholder="Promotion code here">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            <span>Total Price: </span>
+                            <span>$95</span>
                         </div>
                     </div>
-                    <div class="total-price">
-                        <span>Total Price: </span>
-                        <span>$95</span>
-                    </div>
                 </div>
-                <div class="cart__bottom-btns">
-                    <a href="">Continue shopping</a>
-                    <a href="">checkout</a>
+                <div class="btn--primary">
+                    <a class="btn--bg-white mg-r-24" href="">Continue shopping</a>
+                    <a class="btn--bg-white" href="">checkout</a>
                 </div>
             </section>
         </div>
@@ -428,5 +431,6 @@
             </div>
         </div>
     </footer>
+   </div>
 </body>
 </html>
