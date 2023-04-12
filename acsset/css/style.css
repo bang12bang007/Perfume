@@ -89,6 +89,14 @@ body {
     flex: 1;
 }
 
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
 /* Title-Main */
 .main__title{
     display: flex;
@@ -645,7 +653,7 @@ body {
     border-radius: 999999px;
     font-weight: 600;
     padding: 8px 18px;
-    height: 40px;
+    height: 42px;
     width: 111px;
     cursor: pointer;
     transition: .3s;
@@ -1569,10 +1577,6 @@ body {
 #Stelina{
     text-decoration: none;
     color:rgb(171,142,102) ;
-}
-
-.flex-end {
-    justify-content: flex-end;
 }
 
 @keyframes shop-now{

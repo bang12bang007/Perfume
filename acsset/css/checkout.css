@@ -5,7 +5,8 @@
 .checkout__wrapper {
     padding-top: 45px;
     padding-bottom: 50px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 40px;
 }
 
 .checkout__section--container {
@@ -134,7 +135,9 @@
 }
 
 .your-order__items + .your-order__items {
-    margin-top: 60px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eeeeee;
 }
 
 .items__img {
@@ -200,4 +203,40 @@
     font-weight: 600;
     font-size: 16px;
     color: #666;
+}
+
+.congratulation {
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.congratulation i {
+    font-size: 100px;
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+.congratulation h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.congratulation p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 48px;
+}
+
+.congratulation .btn--primary {
+    width: 200px;
+}
+
+.checkout__section--container .btn--primary {
+    width: 150px;
+}
+
+.checkout__section--container .btn--bg-white {
+    width: auto;
 }
