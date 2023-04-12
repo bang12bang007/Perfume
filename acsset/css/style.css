@@ -65,8 +65,20 @@ body {
     margin-right: 10px;
 }
 
+.mg-l-10 {
+    margin-left: 10px;
+}
+
 .mg-r-24 {
     margin-right: 24px;
+}
+
+.mg-r-20 {
+    margin-right: 20px;
+}
+
+.mg-b-30 {
+    margin-bottom: 30px;
 }
 
 .tranform-translateX-3 {
@@ -622,7 +634,6 @@ body {
 .btn--primary{
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
 }
 
 .btn--primary a {
@@ -643,6 +654,7 @@ body {
     justify-content: center;
     font-size: 13px;
     width: max-content;
+    min-width: 111px;
 }
 
 .btn--primary a:hover {
@@ -1557,6 +1569,10 @@ body {
 #Stelina{
     text-decoration: none;
     color:rgb(171,142,102) ;
+}
+
+.flex-end {
+    justify-content: flex-end;
 }
 
 @keyframes shop-now{

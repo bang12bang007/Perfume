@@ -1,0 +1,204 @@
+.checkout__section {
+    margin-bottom: 50px;
+}
+
+.checkout__wrapper {
+    border-top: 1px solid #eeeeee;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.checkout__section--container {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.checkout__items--title {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 34px;
+}
+.checkout__items--title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    width: 30px;
+    height: 2px;
+    background-color: #ab8e66;
+}
+
+.checkout__items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 630px;
+}
+
+.form-control {
+    width: 305px;
+    margin-bottom: 30px;
+}
+
+.form-selection {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.form-selection label:nth-child(1),
+.form-control label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 13px;
+}
+
+.form-control input[type = "text"] {
+    outline: none;
+    border-radius: 999999px;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    /* padding: ; */
+    font-size: 15px;
+    color: #66666b;
+    padding: 10px 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.form-selection > .selection {
+    border: 1px solid #eeeeee;
+    display: inline-block;
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.form-selection .selection i {
+    color: #aaaaaa;
+}
+
+.selection input[type = "checkbox"] {
+    display: none;
+}
+
+.form-selection .option {
+    list-style: none;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+    border: 1px solid #eeeeee;
+    border-top: none;
+    overflow-y: overlay;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    max-height: 242px;
+    transition: .3s;
+}
+
+.form-selection .option li {
+    padding: 10px 24px;
+    font-size: 14px;
+    color: #66666b;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-selection .option li:hover {
+    color: #ab8e66;
+}
+
+.form-selection input[type = "checkbox"]:checked + .option {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+
+.your-order__list {
+    list-style: none;
+}
+
+.your-order__items {
+    display: flex;
+    align-items: center;
+}
+
+.your-order__items + .your-order__items {
+    margin-top: 60px;
+}
+
+.items__img {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+}
+
+.items__img > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.items__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.items__content--name {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.items__content--desc {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.items__content--price {
+    font-weight: 500;
+}
+
+.items__content--price span:nth-child(2) {
+    color: #888888;
+}
+
+.your-order__total {
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.your-order__total span:nth-child(2) {
+    font-size: 20px;
+}
+
+.pay-method .form-control {
+    width: 100%;
+}
+.pay-method .form-control input[type = "text"] {
+    width: 360px;
+    text-align: center;
+}
+
+.pay-method .form-selection label:nth-child(1),
+.pay-method .form-control label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #666;
+}
