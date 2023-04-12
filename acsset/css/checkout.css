@@ -240,3 +240,11 @@
 .checkout__section--container .btn--bg-white {
     width: auto;
 }
+
+.checkout .btn--primary:hover {
+    background-color: #333333;
+}
+
+.checkout .btn--bg-white:hover {
+    background-color: #ab8e66;
+}
