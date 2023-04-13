@@ -1,10 +1,3 @@
-.active > a > i{
-    opacity: 1;
-}
-
-.active > a {
-    color: #000;
-}
 
 .shop__container--sort {
     margin-top: 50px;
