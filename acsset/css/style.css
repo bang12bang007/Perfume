@@ -9,6 +9,10 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+.d-none {
+    display: none;
+}
+
 .border-default{
     border: 1px solid #eeeeee;
 }
@@ -627,6 +631,17 @@ body {
     z-index: 10;
 }
 
+.no-product {
+    text-align: center;
+    color: #666;
+    font-weight: 500;
+    padding: 25px 0;
+}
+
+.no-product span {
+    color: #ab8e66;
+}
+
 .nav__right-cart:hover .minicart {
     transform: translateY(0px);
     opacity: 1;
@@ -661,6 +676,11 @@ body {
 
 .minicart__product-img {
     margin-right: 10px;
+}
+
+.minicart__product-img img {
+    max-width: 80px;
+    max-height: 80px;
 }
 
 .minicart__product-desc {
