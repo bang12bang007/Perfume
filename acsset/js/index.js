@@ -350,7 +350,9 @@ for(const category of categories) {
 
 categories[0].click();
 
-var carts = []
+const storedCart = JSON.parse(localStorage.getItem('cart'))
+var carts = storedCart ?? [];   
+
 const addCarts = document.querySelectorAll('.add-to-cart');
 const cartContainer = document.querySelector('.js-cart-container');
 const noProduct = document.querySelector('.no-product');
@@ -358,7 +360,7 @@ const havingProduct = document.querySelector('.having-product');
 const cartQuantify = document.querySelector('.js-cart-quantify');
 const totalCart = document.querySelector('.cart-total-js');
 
-function renderCart() {
+function updateCart() {
     var totalQuantify = 0;
     var totalPrice = 0;
     if(carts.length > 0) {
@@ -368,6 +370,15 @@ function renderCart() {
         havingProduct.classList.add('d-none');
         noProduct.classList.remove('d-none');
     }
+    var quantify = carts.map(val => {
+        totalQuantify += val.quantify;
+        totalPrice += val.quantify * val.price;
+    })
+    totalCart.innerHTML = "$"+totalPrice;
+    cartQuantify.innerHTML = totalQuantify;
+}
+
+function renderCart() {
     const html = carts.map((value, index) => {
         return `
         <li>
@@ -395,14 +406,12 @@ function renderCart() {
         </li>
         `
     })
-    var quantify = carts.map(val => {
-        totalQuantify += val.quantify;
-        totalPrice += val.quantify * val.price;
-    })
-    totalCart.innerHTML = "$"+totalPrice;
-    cartQuantify.innerHTML = totalQuantify;
+    updateCart();
     cartContainer.innerHTML = html.join('');
+    localStorage.setItem('cart', JSON.stringify(carts))
 }
+
+renderCart()
 
 function findProduct(id, arr) {
     for(var i = 0; i < arr.length; i++) {
