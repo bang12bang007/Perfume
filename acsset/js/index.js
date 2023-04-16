@@ -220,6 +220,8 @@ var products = [
     },
 ]
 
+localStorage.setItem('products', JSON.stringify(products))
+
 const container = document.querySelector('.js-container-product');
 const categories = document.querySelectorAll('.js-cate');
 const cateContent = document.querySelector('.js-cate-content');
