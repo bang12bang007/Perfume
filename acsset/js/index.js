@@ -1,6 +1,7 @@
 var products = [
     // bestseller
     {
+        id:1,
         img: "./acsset/img/product-item-1.jpg",
         name: "Blanche Parfum",
         current_price: 45,
@@ -8,6 +9,7 @@ var products = [
         cate: "bestseller"
     },
     {
+        id:2,
         img: "./acsset/img/product-item-2.jpg",
         name: "Tuscan Creations",
         current_price: 45,
@@ -15,6 +17,7 @@ var products = [
         cate: "bestseller"
     },
     {
+        id:3,
         img: "./acsset/img/product-item-3.jpg",
         name: "Terra Rossa",
         current_price: 45,
@@ -22,6 +25,7 @@ var products = [
         cate: "bestseller"
     },
     {
+        id:4,
         img: "./acsset/img/product-item-4.jpg",
         name: "Glorious Eau",
         current_price: 45,
@@ -29,6 +33,7 @@ var products = [
         cate: "bestseller"
     },
     {
+        id:5,
         img: "./acsset/img/product-item-5.jpg",
         name: "The Alchemist",
         current_price: 45,
@@ -36,6 +41,7 @@ var products = [
         cate: "bestseller"
     },
     {
+        id:6,
         img: "./acsset/img/product-item-6.jpg",
         name: "Garden A Winter",
         current_price: 45,
@@ -43,6 +49,7 @@ var products = [
         cate: "bestseller"
     },
     {
+        id:7,
         img: "./acsset/img/product-item-7.jpg",
         name: "Melody Eau",
         current_price: 45,
@@ -50,6 +57,7 @@ var products = [
         cate: "bestseller"
     },
     {
+        id:8,
         img: "./acsset/img/product-item-8.jpg",
         name: "Toilette",
         current_price: 45,
@@ -58,6 +66,7 @@ var products = [
     },
     // new arrivals
     {
+        id:9,
         img: "./acsset/img/product-item-9.jpg",
         name: "Ambre Royal",
         current_price: 45,
@@ -65,6 +74,7 @@ var products = [
         cate: "new arrivals"
     },
     {
+        id:10,
         img: "./acsset/img/product-item-10.jpg",
         name: "Patiala Eau",
         current_price: 45,
@@ -72,6 +82,7 @@ var products = [
         cate: "new arrivals"
     },
     {
+        id:11,
         img: "./acsset/img/product-item-11.jpg",
         name: "Mojave Ghost",
         current_price: 45,
@@ -79,6 +90,7 @@ var products = [
         cate: "new arrivals"
     },
     {
+        id:12,
         img: "./acsset/img/product-item-13.jpg",
         name: "Rose Elixir",
         current_price: 45,
@@ -86,6 +98,7 @@ var products = [
         cate: "new arrivals"
     },
     {
+        id:13,
         img: "./acsset/img/product-item-14.jpg",
         name: "Aoud Queen Roses",
         current_price: 45,
@@ -93,6 +106,7 @@ var products = [
         cate: "new arrivals"
     },
     {
+        id:14,
         img: "./acsset/img/product-item-15.jpg",
         name: "Love Eau",
         current_price: 45,
@@ -100,6 +114,7 @@ var products = [
         cate: "new arrivals"
     },
     {
+        id:15,
         img: "./acsset/img/product-item-16.jpg",
         name: "Bibliotheque",
         current_price: 45,
@@ -107,6 +122,7 @@ var products = [
         cate: "new arrivals"
     },
     {
+        id:16,
         img: "./acsset/img/product-item-2.jpg",
         name: "Tuscan Creations",
         current_price: 45,
@@ -115,6 +131,7 @@ var products = [
     },
     // top rated
     {
+        id:17,
         img: "./acsset/img/product-item-10.jpg",
         name: "Patiala Eau",
         current_price: 45,
@@ -122,6 +139,7 @@ var products = [
         cate: "top rated"
     },
     {
+        id:18,
         img: "./acsset/img/product-item-12.jpg",
         name: "Bal Afrique",
         current_price: 45,
@@ -129,6 +147,7 @@ var products = [
         cate: "top rated"
     },
     {
+        id:19,
         img: "./acsset/img/product-item-8.jpg",
         name: "Exotic Diamond",
         current_price: 45,
@@ -136,6 +155,7 @@ var products = [
         cate: "top rated"
     },
     {
+        id:20,
         img: "./acsset/img/product-item-4.jpg",
         name: "Mon Guerlain",
         current_price: 45,
@@ -143,6 +163,7 @@ var products = [
         cate: "top rated"
     },
     {
+        id:21,
         img: "./acsset/img/product-item-9.jpg",
         name: "Dainty Diamond",
         current_price: 45,
@@ -150,6 +171,7 @@ var products = [
         cate: "top rated"
     },
     {
+        id:22,
         img: "./acsset/img/product-item-13.jpg",
         name: "Magnificent Bangle",
         current_price: 45,
@@ -157,6 +179,7 @@ var products = [
         cate: "top rated"
     },
     {
+        id:23,
         img: "./acsset/img/product-item-16.jpg",
         name: "Florale",
         current_price: 45,
@@ -164,6 +187,7 @@ var products = [
         cate: "top rated"
     },
     {
+        id:24,
         img: "./acsset/img/product-item-8.jpg",
         name: "The Alchemist",
         current_price: 45,
@@ -171,6 +195,7 @@ var products = [
         cate: "top rated"
     },
     {
+        id:25,
         img: "./acsset/img/product-item-17.jpg",
         name: "Glorious Eau",
         current_price: 45,
@@ -179,6 +204,7 @@ var products = [
         deal: true
     },
     {
+        id:26,
         img: "./acsset/img/product-item-21.jpg",
         name: "The Alchemist",
         current_price: 45,
@@ -187,6 +213,7 @@ var products = [
         deal: true
     },
     {
+        id:27,
         img: "./acsset/img/product-item-22.jpg",
         name: "The Alchemist",
         current_price: 45,
@@ -195,6 +222,7 @@ var products = [
         deal: true
     },
     {
+        id:28,
         img: "./acsset/img/product-item-19.jpg",
         name: "The Alchemist",
         current_price: 45,
@@ -203,6 +231,7 @@ var products = [
         deal: true
     },
     {
+        id:29,
         img: "./acsset/img/product-item-18.jpg",
         name: "The Alchemist",
         current_price: 45,
@@ -211,6 +240,7 @@ var products = [
         deal: true
     },
     {
+        id:30,
         img: "./acsset/img/product-item-20.jpg",
         name: "The Alchemist",
         current_price: 45,
@@ -227,6 +257,7 @@ const categories = document.querySelectorAll('.js-cate');
 const cateContent = document.querySelector('.js-cate-content');
 const cateItems = document.querySelectorAll('.js-cate-items');
 const dealContainer = document.querySelector('.deal__container');
+const modal = document.querySelector('.modal');
 
 for(const cateItem of cateItems) {
     cateItem.addEventListener('click',()=>{
@@ -235,9 +266,6 @@ for(const cateItem of cateItems) {
 }
 
 function renderDeal() {
-    // let list = products.filter(value => {
-    //     return value.deal == true;
-    // })
     const html = products.map((value, index) => {
         if(value.deal == true) {
             return `
@@ -249,9 +277,9 @@ function renderDeal() {
                             <img src="${value.img}" alt="">
                         </a>
                         <div class="product__action">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <span class="add-to-cart" data-info=${index}><i class="fa-solid fa-bag-shopping"></i></span>
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span onclick="addCart(${value.id})"><i class="fa-solid fa-bag-shopping"></i></span>
                         </div>
                     </div>
                     <div class="product__content">
@@ -307,9 +335,9 @@ function render(arr) {
                         <img src="${value.img}" alt="">
                     </a>
                     <div class="product__action">
-                        <a href=""><i class="fa-regular fa-heart"></i></a>
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <span class="add-to-cart" data-info=${index}><i class="fa-solid fa-bag-shopping"></i></span>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span onclick="addCart(${value.id})"><i class="fa-solid fa-bag-shopping"></i></span>
                     </div>
                 </div>
                 <div class="product__content">
@@ -355,7 +383,6 @@ categories[0].click();
 const storedCart = JSON.parse(localStorage.getItem('cart'))
 var carts = storedCart ?? [];   
 
-const addCarts = document.querySelectorAll('.add-to-cart');
 const cartContainer = document.querySelector('.js-cart-container');
 const noProduct = document.querySelector('.no-product');
 const havingProduct = document.querySelector('.having-product');
@@ -411,7 +438,7 @@ function renderCart() {
     updateCart();
     cartContainer.innerHTML = html.join('');
     localStorage.setItem('cart', JSON.stringify(carts))
-}
+}   
 
 renderCart()
 
@@ -429,44 +456,39 @@ function clearProduct(index) {
     renderCart();
 }
 
-for(const addCart of addCarts) {
-    addCart.addEventListener('click', ()=> {
-        for(var i = 0; i < products.length; i++) {
-            if(addCart.dataset.info == i) {
-                let id = addCart.dataset.info
-                let img = products[i].img
-                let product_name = products[i].name
-                let price = products[i].current_price
-                let quantify = 1;
-                if(carts.length  == 0) {
-                    carts.push({
-                        id,
-                        img,
-                        product_name,
-                        price,
-                        quantify
-                    })
-                    renderCart();
-                }
-                else if(findProduct(id, carts) < 0) {
-                    carts.push({
-                        id,
-                        img,
-                        product_name,
-                        price,
-                        quantify
-                    })
-                    renderCart();
-                }
-                else if(findProduct(id, carts) >= 0) {
-                    carts[findProduct(id, carts)].quantify += 1;
-                    renderCart();
-                }
-                
-                console.log(carts);
-            }
-        }
-    })
+function addCart(index) {
+    let i = products.findIndex((value) => {
+        return value.id == index;
+    });
+    let id = index
+    let img = products[i].img
+    let product_name = products[i].name
+    let price = products[i].current_price
+    let quantify = 1;
+    if(carts.length  == 0) {
+        carts.push({
+            id,
+            img,
+            product_name,
+            price,
+            quantify
+        })
+        renderCart();
+    }
+    else if(findProduct(id, carts) < 0) {
+        carts.push({
+            id,
+            img,
+            product_name,
+            price,
+            quantify
+        })
+        renderCart();
+    }
+    else if(findProduct(id, carts) >= 0) {
+        carts[findProduct(id, carts)].quantify += 1;
+        renderCart();
+    }
 }
 
 $('.deal__container').slick({
@@ -504,3 +526,165 @@ $('.deal__container').slick({
         // instead of a settings object
     ]
     });
+
+function renderModal(index) {
+    let id = products.findIndex((value) => {
+        return value.id == index;
+    });
+    const html = `
+    <div class="modal__container">
+        <div class="detail__product">
+            <div class="gird">
+                <div class="row">
+                    <div class="col c-12 m-6 l-6">
+                        <div class="detail__product--img">
+                            <img src="${products[id].img}" alt="">
+                            <div class="detail__slider">
+                                <div class="slider__img--container">
+                                    <ul class="img__slider">
+                                        <li class="img__slider--items">
+                                            <img src="${products[id].img}" alt="">
+                                        </li>
+                                        <li class="img__slider--items">
+                                            <img src="${products[id].img}" alt="">
+                                        </li>
+                                        <li class="img__slider--items">
+                                            <img src="${products[id].img}" alt="">
+                                        </li>
+                                        <li class="img__slider--items">
+                                            <img src="${products[id].img}" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="prev-img control-slider-img">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="next-img control-slider-img">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col c-12 m-6 l-6">
+                        <div class="detail__product--container">
+                            <div class="detail__product--info">
+                                <h3 class="name">${products[id].name}</h3>
+                                <div class="product__rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="p status">
+                                    <span>Availability: </span>
+                                    <a href="">In Stock</a>
+                                </div>
+                                <p class="price">€${products[id].current_price}</p>
+                            </div>
+                            <ul class="detail__product--desc">
+                                <li>Vestibulum tortor quam</li>
+                                <li>Imported</li>
+                                <li>Art.No. 06-7680</li>
+                            </ul>
+                            <div class="detail__product--option">
+                                <p>
+                                    <span  class="title">Color:</span>
+                                    <span>White/Black/Teal/Brown</span>
+                                </p>
+                                <ul class="sidebar__list">
+                                    <li class="sidebar__items">
+                                        <a class="bg-white border-default">
+                                            <i class="fa-solid fa-check"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="bg-black">
+                                            <i class="fa-solid fa-check"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="bg-color_1">
+                                            <i class="fa-solid fa-check"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items active">
+                                        <a class="bg-color_2 ">
+                                            <i class="fa-solid fa-check"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="detail__product--option">
+                                <p>
+                                    <span  class="title">Pots Size:</span>
+                                </p>
+                                <ul class="sidebar__list">
+                                    <li class="sidebar__items">
+                                        <a class="size border-default">
+                                            XS
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="size border-default">
+                                            S
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="size border-default">
+                                            M
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items active-size">
+                                        <a class="size border-default">
+                                            L
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="size border-default">
+                                            XL
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="size border-default">
+                                            XXL
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="detail__product--action">
+                                <a href="#" class="add-to-wishlist mg-r-20">
+                                    <i class="fa-regular fa-heart no-full"></i>
+                                    <i class="fa-solid fa-heart full"></i>
+                                    <span>Add to Wishlist</span>
+                                </a>
+                                <a href="#" class="view-size-chart">
+                                    <i class="fa-solid fa-ruler-horizontal"></i>
+                                    <span>View Size Chart</span>
+                                </a>
+                            </div>
+                            <div class="group--btn">
+                                <div class="detail__quantify--control mg-r-10 border-default ">
+                                    <button class="detail__quantify--control-action"><i class="fa-solid fa-minus"></i></button>
+                                    <span>1</span>
+                                    <button class="detail__quantify--control-action"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                                <a  class="add-to-cart btn--primary" data-info=${id} href="">add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="close" onclick="closeModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>       
+    </div>
+    `
+    modal.classList.remove('hidden_modal');
+    modal.innerHTML = html;
+}
+
+function closeModal() {
+    modal.classList.add('hidden_modal');
+}
