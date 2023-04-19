@@ -250,6 +250,48 @@ var products = [
     },
 ]
 
+var posts = [
+    {
+        id: 1,
+        src: './acsset/img/slider-blog-thumb-1.jpg',
+        title: "We bring you the best",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+    {
+        id: 2,
+        src: './acsset/img/slider-blog-thumb-2.jpg',
+        title: "We know that buying Items",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+    {
+        id: 3,
+        src: './acsset/img/slider-blog-thumb-3.jpg',
+        title: "We design functional Items",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+    {
+        id: 4,
+        src: './acsset/img/slider-blog-thumb-4.jpg',
+        title: "How to Build Your Perfect Dining",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+    {
+        id: 5,
+        src: './acsset/img/blog-item-list-5.jpg',
+        title: "New Designer Outdoor Items",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+]
+
+localStorage.setItem('posts', JSON.stringify(posts));
+
+ 
+
 localStorage.setItem('products', JSON.stringify(products))
 
 const container = document.querySelector('.js-container-product');
@@ -687,4 +729,73 @@ function renderModal(index) {
 
 function closeModal() {
     modal.classList.add('hidden_modal');
+}
+
+const listPosts = document.querySelector('.news__list');
+function renderPosts() {
+    const html = posts.map(value => {
+        return `
+        <li class="news__items">
+            <div class="news-posts__container">
+                <div class="news-posts__img">
+                    <img src="${value.src}" alt="">
+                </div>
+                <div class="news-posts__content">
+                    <p class="news-posts__content--time">
+                        <span>august 17</span>,
+                        <span>09:14 AM</span>
+                    </p>
+                    <a href="posts.html" onclick = "post(${value.id})" class="news-posts__content--title">${value.title}</a>
+                    <p class="news-posts__content--desc">${value.desc}</p>
+                    <a href="" class="banner--link">
+                        read more
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </li> 
+        `
+    })
+    listPosts.innerHTML = html.join('');
+}
+
+renderPosts();
+$('.news__list').slick({
+    dots: true,
+    infinite: false,
+    speed: 1200,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+        }
+    ]
+})
+
+function post(i) {
+    id = posts.findIndex(value =>{
+        return value.id == i;
+    })
+    localStorage.setItem('postItem', JSON.stringify(posts[id]));
 }

@@ -23,6 +23,7 @@
 }
 .post-format__left{
     margin-left:30px;
+    flex: 1;
 }
 .post-format a {
     text-decoration: none;
@@ -31,6 +32,7 @@
     color: #aaa;
     font-size: 12px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .post-format--title{
     margin-top: 20px;
@@ -77,11 +79,15 @@
 
 .img__container {
     position: relative;
+    min-width: 370px;
+    min-height: 300px;
 }
 
 .img__container img {
     object-fit: cover;
     object-position: center;
+    height: 100%;
+    width: 100%;
 }
 
 .left,
