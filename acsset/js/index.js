@@ -369,14 +369,14 @@ renderDeal()
 function render(arr) {
     const html = arr.map((value, index) => {
         return `
-        <div class="col c-6 m-4 l-3">
+        <div class="col c-6 m-6 l-3">
             <div class="product">
                 <span class="product__label">New</span>
                 <div class="product__img-link">
                     <a href="#" class="product__img">
                         <img src="${value.img}" alt="">
                     </a>
-                    <div class="product__action">
+                    <div class="product__action hidden-mobile">
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                         <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <span onclick="addCart(${value.id})"><i class="fa-solid fa-bag-shopping"></i></span>
@@ -428,7 +428,7 @@ var carts = storedCart ?? [];
 const cartContainer = document.querySelector('.js-cart-container');
 const noProduct = document.querySelector('.no-product');
 const havingProduct = document.querySelector('.having-product');
-const cartQuantify = document.querySelector('.js-cart-quantify');
+const cartQuantifies = document.querySelectorAll('.js-cart-quantify');
 const totalCart = document.querySelector('.cart-total-js');
 
 function updateCart() {
@@ -446,7 +446,9 @@ function updateCart() {
         totalPrice += val.quantify * val.price;
     })
     totalCart.innerHTML = "$"+totalPrice;
-    cartQuantify.innerHTML = totalQuantify;
+    cartQuantifies.forEach(cartQuantify => {
+        cartQuantify.innerHTML = totalQuantify;
+    })
 }
 
 function renderCart() {
@@ -543,8 +545,8 @@ $('.deal__container').slick({
         {
         breakpoint: 1024,
         settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 2,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
         }
@@ -770,7 +772,7 @@ $('.news__list').slick({
         {
         breakpoint: 1024,
         settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             dots: true
@@ -799,3 +801,6 @@ function post(i) {
     })
     localStorage.setItem('postItem', JSON.stringify(posts[id]));
 }
+
+
+

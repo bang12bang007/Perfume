@@ -433,7 +433,11 @@ body {
 .header--top {
     width: 100%;
     background-color: #ab8e66;
-    margin-bottom: 50px;
+    
+}
+
+.header-container {
+    margin-top: 40px;
 }
 
 .header-container__title {
@@ -482,6 +486,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    z-index: 1;
 }
 
 .language ul li {
@@ -547,7 +552,7 @@ body {
     justify-content: space-between;
 }
 
-#cate {
+.nav__search--cate input[type = "checkbox"] {
     display: none;
 }
 
@@ -571,7 +576,7 @@ body {
     cursor: pointer;
 }
 
-#cate:checked + ul {
+.nav__search--cate input[type = "checkbox"]:checked + ul {
     transform: translateY(0px);
     opacity: 1;
     visibility: visible;
@@ -1079,19 +1084,23 @@ body {
 .slider {
     list-style: none;
     margin: 0 -15px;
+    height: 100%;
 }
 
 .slider .slider__container {
     position: relative;
+    height: 100%;
 }
 
 .slider__img {
     width: 100%;
+    height: 100%;
 }
 
 .slider__img img {
     width: 100%;
     max-height: 612px;
+    height:100%;
 }
 
 .slider__content {
@@ -1268,7 +1277,6 @@ body {
 
 .product__img {
     width: 100%;
-    height: 266px;
     display: inline-block;
 }
 
@@ -1451,6 +1459,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
+    flex-wrap: wrap;
 }
 
 .product-type > label {
@@ -1636,8 +1645,7 @@ body {
     width: 100%;
     color: #191919;
     line-height: 26px;
-    padding-top: 5px;
-    padding-bottom:5px;
+    padding-bottom:40px;
 }
 
 .footer-container__item h4 {
@@ -1697,18 +1705,19 @@ body {
     margin-bottom: 20px;
 }
 .sosial{
-    width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     font-size: 24px;
-    padding-top: 39px;
     padding-bottom: 10px;
-    min-width: 47%;
     margin-bottom: 10px;  
+}
+.copyright {
+    margin-bottom: 30px;
 }
 .sosial a{
     color: #555;
+    margin: 0 4%;
 }
 .sosial a:hover{
     color:rgb(171,142,102) ;
@@ -1716,6 +1725,7 @@ body {
 #Stelina{
     text-decoration: none;
     color:rgb(171,142,102) ;
+
 }
 
 /* css for modal */
@@ -2054,4 +2064,12 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.nav__right-menu {
+    display: none;
+}
+
+.pc-none {
+    display: none;
 }
