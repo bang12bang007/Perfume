@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     background-color: #f3f3f3;
     margin-bottom: 40px;
+    gap: 16px;
 }
 
 .sort__items:first-child {
@@ -79,4 +80,8 @@
 
 .shop__list-product {
     margin-bottom: 45px;
+}
+
+.row {
+    flex-wrap: wrap-reverse;
 }

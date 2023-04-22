@@ -7,61 +7,15 @@
     .show-mobile-tab {
         display: block;
     }
-
+    
     .nav__right-menu {
         cursor: pointer;
-    }
-}
-
-/* Mobile and Tablet: width < 1024px */
-@media only screen and (max-width:63.9375em) {
-    .hidden-mobile-tab-2 {
-        display: none;
-    }
-
-    .show-mobile-tab-2 {
-        display: block;
-    }
-
-    .nav__right-menu {
         display: block;
     }
 
     .nav__right-menu i {
         color: #333;
         margin-left: 20px;
-    }
-
-    .banner__right {
-        margin-top: 20px
-    }
-
-    .introduction__container {
-        width: auto;
-    }
-
-    .introduction__items {
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-        float: inherit;
-    }
-
-    .introduction__items--icon {
-        margin-bottom: 13px;
-        margin-right: 0;
-    }
-
-    .introduction__items--content {
-        text-align: center;
-    }
-
-    .introduction__items--content > p {
-        width: 225px;
-    }
-
-    .banner__item {
-        margin: 0;
     }
 
     .modal__menu {
@@ -174,6 +128,54 @@
         transform: translate(0);
         visibility: visible;
     }
+
+}
+
+/* Mobile and Tablet: width < 1024px */
+@media only screen and (max-width:63.9375em) {
+
+    .hidden-mobile-tab-2 {
+        display: none;
+    }
+
+    .show-mobile-tab-2 {
+        display: block;
+    }
+
+
+    .banner__right {
+        margin-top: 20px
+    }
+
+    .introduction__container {
+        width: auto;
+    }
+
+    .introduction__items {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        float: inherit;
+    }
+
+    .introduction__items--icon {
+        margin-bottom: 13px;
+        margin-right: 0;
+    }
+
+    .introduction__items--content {
+        text-align: center;
+    }
+
+    .introduction__items--content > p {
+        width: 225px;
+    }
+
+    .banner__item {
+        margin: 0;
+    }
+
+    
 }
 
 /* Mobile: width < 740px */
@@ -382,6 +384,14 @@
 
     .logo img {
         width: 80%;
+    }
+
+    .sort__items:first-child {
+        margin: 0;
+    }
+
+    .shop__container--sort {
+        justify-content: space-evenly;
     }
 }
 
