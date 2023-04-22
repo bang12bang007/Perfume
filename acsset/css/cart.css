@@ -73,9 +73,10 @@
     background-color: transparent;
 }
 
-.items__price {
+.items__container .items__price {
     font-size: 20px;
     font-weight: 500;
+    color: #000;
 }
 
 .items__clear {
@@ -101,6 +102,8 @@
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .coupon-code {
@@ -128,6 +131,7 @@
     padding-left: 12px;
     font-size: 15px;
     font-weight: 500;
+    font-family: 'Jost', sans-serif;
 }
 
 .coupon-code__input i {
@@ -144,4 +148,5 @@
     justify-content: flex-end;
     margin-bottom: 66px;
 }
+
 

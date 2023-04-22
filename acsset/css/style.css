@@ -89,6 +89,10 @@ body {
     transform: translateX(-3px);
 }
 
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
 .flex-1 {
     flex: 1;
 }

@@ -82,6 +82,6 @@
     margin-bottom: 45px;
 }
 
-.row {
-    flex-wrap: wrap-reverse;
+.sidebar {
+    padding-bottom: 25px;
 }

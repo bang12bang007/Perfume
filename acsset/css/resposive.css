@@ -393,6 +393,27 @@
     .shop__container--sort {
         justify-content: space-evenly;
     }
+
+    .img__container {
+        flex: 100%;
+    }
+
+    .items__img {
+        margin-right: 12px;
+    }
+
+    .post-format__left {
+        margin-left: 10px;
+    }
+
+    .coupon-code__input input {
+        font-size: 15px;
+    }
+
+    .items__clear {
+        text-align: center;
+        margin-top: 10px;
+    }
 }
 
 /* Tablet: width >= 740px and width < 1024px */
@@ -401,5 +422,9 @@
         display: flex;
         width: 100%;
         margin-top: 13px;
+    }
+
+    .sort__items:first-child {
+        margin-right: 50px;
     }
 }
