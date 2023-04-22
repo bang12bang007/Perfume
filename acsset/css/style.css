@@ -165,6 +165,10 @@ body {
     transform: translateY(-50%);
 }
 
+.sidebar{
+    padding-bottom: 25px;
+}
+
 .sidebar__list {
     list-style: none;
     display: flex;

@@ -175,7 +175,9 @@
         margin: 0;
     }
 
-    
+    .posts .slick-slide {
+        margin: 0;
+    }
 }
 
 /* Mobile: width < 740px */
@@ -396,6 +398,7 @@
 
     .img__container {
         flex: 100%;
+        min-width: auto;
     }
 
     .items__img {
@@ -413,6 +416,19 @@
     .items__clear {
         text-align: center;
         margin-top: 10px;
+    }
+
+    .related-articles__posts--img {
+        flex: 100%;
+        padding: 15px; 
+    }
+
+    .slick-slide img {
+        width: 100%
+    }
+
+    .related-articles__posts--content {
+        padding: 0 15px 30px 15px;
     }
 }
 
