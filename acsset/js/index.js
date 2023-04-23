@@ -420,8 +420,7 @@ for(const category of categories) {
     })
 }
 
-categories[0].click();
-const storedCart = JSON.parse(localStorage.getItem('cart'))
+categories[0].click();  
 var carts = storedCart ?? [];   
 
 $('.deal__container').slick({

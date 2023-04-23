@@ -61,8 +61,9 @@
 }
 .stelina_item {
     display: flex;
-    justify-content: space-around ;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 .icon_item{
     width: 25%;
@@ -87,8 +88,7 @@
 }
 .line_height{
     width: 100%;
-    padding: 40px;
-    margin-top: 40px;
+    padding: 40px 0;
 }
 .line_height span{
     line-height: 26px;
@@ -107,13 +107,9 @@
 }
 .img_member img{
     border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
+    margin-left: 50px;
 }
-.img_member img{
-    align-items: center;
-    padding-left: 70px;
-}
+
 .slick_item h3{
     font-size: 15px;
     text-transform: uppercase;
@@ -136,7 +132,11 @@
   left:0;
   transform: translateY(-50%);
   border: none;
+  z-index: 1000;
   background-color: white;
+}
+.slick-prev :hover{
+    color: #ab8e66;
 }
 .slick-next{
   position: absolute;
@@ -146,3 +146,6 @@
   border: none;
   background-color: white;
   }
+.slick-next :hover{
+    color: #ab8e66;
+}

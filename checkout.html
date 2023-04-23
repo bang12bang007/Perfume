@@ -296,7 +296,7 @@
                         <p class="main__title--current">Checkout</p>
                     </div>
                     <h3 class="custom--title">checkout</h3>
-                    <div class="checkout__section">
+                    <form action="" id="shipping-address--form" class="checkout__section">
                         <div class="checkout__wrapper">
                             <div class="checkout__section--container">
                                 <div class="gird">
@@ -307,18 +307,18 @@
                                                 <div class="checkout__items-container">
                                                     <div class="form-control">
                                                         <label for="">First Name</label>
-                                                        <input type="text" name="" id="" >
+                                                        <input type="text" name="first_name" id="first_name" >
                                                     </div>
                                                     <div class="form-control">
                                                         <label for="">Last Name</label>
-                                                        <input type="text" name="" id="" >
+                                                        <input type="text" name="last_name" id="last_name" >
                                                     </div>
                                                     <div class="form-selection">
                                                         <label for="option">Country</label>
                                                         <label class="selection">
                                                             <span>United States</span>
                                                             <i class="fa-solid fa-caret-down"></i>
-                                                            <input type="checkbox" name="" id="option" >
+                                                            <input type="checkbox" name="" id="option">
                                                             <ul class="option">
                                                                 <li>
                                                                     <span>Benin</span>
@@ -378,11 +378,11 @@
                                                     </div>
                                                     <div class="form-control">
                                                         <label for="">Zip Code</label>
-                                                        <input type="text" name="" id="" >
+                                                        <input type="text" name="zip_code" id="zip_code" >
                                                     </div>
                                                     <div class="form-control">
                                                         <label for="">Address</label>
-                                                        <input type="text" name="" id="" >
+                                                        <input type="text" name="address" id="address" >
                                                     </div>
     
                                                 </div>
@@ -440,12 +440,13 @@
                             </div>
                         </div>
                         <div class="group--btn flex-end">
-                            <a class="btn--primary btn--bg-white" href="#">payment
+                            <label for="submit" class="btn--primary btn--bg-white submit">payment
+                                <input type="submit" value="" id="submit">
                                 <i class="fa-solid fa-arrow-right mg-l-10"></i>
-                            </a>
+                            </label>
                         </div>
-                    </div>
-                    <div class="checkout__section">
+                    </form>
+                    <form id="payment_method" class="checkout__section">
                         <div class="checkout__wrapper">
                             <div class="checkout__section--container">
                                 <div class="gird">
@@ -460,7 +461,7 @@
                                                 <div class="checkout__items-container pay-method">
                                                     <div class="form-control">
                                                         <label for="">Card number</label>
-                                                        <input type="text" name="" id="" placeholder="xxx - xxx - xxx - xxx">
+                                                        <input type="text" name="card_number" id="card_number" placeholder="xxx - xxx - xxx - xxx">
                                                     </div>
                                                     <div class="form-selection">
                                                         <label for="option">Month</label>
@@ -580,12 +581,13 @@
                             </div>
                         </div>
                         <div class="group--btn flex-end">
-                            <a class="btn--primary btn--bg-white mg-r-20" href="#">
+                            <a class="btn--primary btn--bg-white mg-r-20" href="shop.html">
                                 <i class="fa-solid fa-arrow-left mg-r-10"></i>
-                                back to shopping</a>
-                            <a class="btn--primary" href="#">pay now</a>
+                                back to shopping
+                            </a>
+                            <input type="submit" class="btn--primary" value="pay now">
                         </div>
-                    </div>
+                    </form>         
                     <div class="checkout__section">
                         <div class="checkout__wrapper">
                             <div class="congratulation">
@@ -786,4 +788,65 @@
     </div>
 </div>
 <script src="./acsset/js/responsive.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#shipping-address--form").validate(
+        {
+            rules: {
+                first_name : {
+                    required: true,
+                    minlength: 3
+                },
+                last_name: {
+                    required: true,
+                    minlength: 3
+                },
+                zip_code: {
+                    required: true,
+                    minlength: 5,
+                },
+                address: {
+                    required: true,
+                    minlength: 8,
+                }                          
+            },
+            messages: {
+                first_name: {
+                    required: "Please enter your first name",
+                    minlength: "First name should be at least 3 characters"
+                },
+                last_name: {
+                    required: "Please enter your last name",
+                    minlength: "Last name should be at least 3 characters"
+                },
+                zip_code: {
+                    required: "Please enter your zip code",
+                    minlength: "Zip code should be at least 5 characters"
+                },
+                address: {
+                    required: "Please enter your address",
+                    minlength: "Address should be at least 8 characters"
+                }
+            }
+        }    
+    );
+
+    $("#payment_method").validate({
+        rules: {
+            card_number: {
+                required: true,
+                minlength: 12
+            }
+        },
+        messages: {
+            card_number: {
+                required: "Please enter your card number",
+                minlength: "Card number should be at least 12 characters"
+            }
+        }
+    })
+});
+</script>
 </html>

@@ -248,3 +248,20 @@
 .checkout .btn--bg-white:hover {
     background-color: #ab8e66;
 }
+
+
+.checkout .submit input[type = "submit"] {
+    display: none;
+}
+
+
+.pay-method .form-control label.error,
+label.error {
+    color: #e7000094;
+    font-size: 14px;
+    font-weight: 400
+}
+
+input[type = "submit"] {
+    font-family: 'Jost', sans-serif
+}
