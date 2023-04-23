@@ -36,7 +36,7 @@ function renderProducts() {
                         <div class="product__action">
                             <a href=""><i class="fa-regular fa-heart"></i></a>
                             <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                            <span onclick="addCart(${value.id})"><i class="fa-solid fa-bag-shopping"></i></span>
                         </div>
                     </div>
                     <div class="product__content">

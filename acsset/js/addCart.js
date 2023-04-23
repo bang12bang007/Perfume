@@ -4,7 +4,7 @@ var carts = storedCart ?? [];
 const cartContainer = document.querySelector('.js-cart-container');
 const noProduct = document.querySelector('.no-product');
 const havingProduct = document.querySelector('.having-product');
-const cartQuantify = document.querySelector('.js-cart-quantify');
+const cartQuantifies = document.querySelectorAll('.js-cart-quantify');
 const totalCart = document.querySelector('.cart-total-js');
 
 function updateCart() {
@@ -22,7 +22,9 @@ function updateCart() {
         totalPrice += val.quantify * val.price;
     })
     totalCart.innerHTML = "$"+totalPrice;
-    cartQuantify.innerHTML = totalQuantify;
+    cartQuantifies.forEach(cartQuantify => {
+        cartQuantify.innerHTML = totalQuantify;
+    })
 }
 
 function renderCart() {
@@ -59,3 +61,51 @@ function renderCart() {
 }   
 
 renderCart()
+function findProduct(id, arr) {
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i].id == id) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+function clearProduct(index) {
+    carts.splice(index, 1);
+    renderCart();
+}
+
+function addCart(index) {
+    let i = products.findIndex((value) => {
+        return value.id == index;
+    });
+    let id = index
+    let img = products[i].img
+    let product_name = products[i].name
+    let price = products[i].current_price
+    let quantify = 1;
+    if(carts.length  == 0) {
+        carts.push({
+            id,
+            img,
+            product_name,
+            price,
+            quantify
+        })
+        renderCart();
+    }
+    else if(findProduct(id, carts) < 0) {
+        carts.push({
+            id,
+            img,
+            product_name,
+            price,
+            quantify
+        })
+        renderCart();
+    }
+    else if(findProduct(id, carts) >= 0) {
+        carts[findProduct(id, carts)].quantify += 1;
+        renderCart();
+    }
+}
