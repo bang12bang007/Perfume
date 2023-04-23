@@ -422,6 +422,8 @@ for(const category of categories) {
 
 categories[0].click();
 
+<<<<<<< HEAD
+=======
 const storedCart = JSON.parse(localStorage.getItem('cart'))
 var carts = storedCart ?? [];   
 
@@ -486,6 +488,7 @@ function renderCart() {
 
 renderCart()
 
+>>>>>>> d8385e5906707aa03af0c0c64a1147a9035c69f0
 function findProduct(id, arr) {
     for(var i = 0; i < arr.length; i++) {
         if(arr[i].id == id) {
