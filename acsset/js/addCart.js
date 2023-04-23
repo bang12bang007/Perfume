@@ -7,6 +7,7 @@ const havingProduct = document.querySelector('.having-product');
 const cartQuantifies = document.querySelectorAll('.js-cart-quantify');
 const totalCart = document.querySelector('.cart-total-js');
 
+
 function updateCart() {
     var totalQuantify = 0;
     var totalPrice = 0;
@@ -75,7 +76,7 @@ function clearProduct(index) {
     renderCart();
 }
 
-function addCart(index) {
+function addCart(index, q) {
     let i = products.findIndex((value) => {
         return value.id == index;
     });
@@ -105,7 +106,7 @@ function addCart(index) {
         renderCart();
     }
     else if(findProduct(id, carts) >= 0) {
-        carts[findProduct(id, carts)].quantify += 1;
+        carts[findProduct(id, carts)].quantify += q;
         renderCart();
     }
 }

@@ -798,15 +798,17 @@ body {
     min-width: 111px;
 }
 
-.group--btn .btn--primary:hover {
+.btn--primary.btn--bg-white:hover {
     background-color: #ab8e66;
     color: #fff;
 }
 
-.group--btn .btn--bg-white {
+.btn--primary.btn--bg-white {
     background-color: #fff;
     color: #333333;
 }
+
+
 
 .minicart__product-name:hover,
 .minicart__product-desc p a:hover, 
@@ -1719,9 +1721,6 @@ body {
     font-size: 24px;
     padding-bottom: 10px;
     margin-bottom: 10px;  
-}
-.copyright {
-    margin-bottom: 30px;
 }
 .sosial a{
     color: #555;

@@ -296,118 +296,34 @@
                     <p class="main__title--current">Shopping Cart</p>
                 </div>
                 <h3 class="custom--title">shopping cart</h3>
-                <div class="cart__product">
-                    <ul class="cart__product-list">
-                        <li class="cart__product-items">
-                            <div class="items__container">
-                                <div class="items__img">
-                                    <img src="./acsset/img/item-minicart-2.jpg" alt="">
-                                </div>
-                                <div class="items__content">
-                                    <a class="items__content-name">Bibliotheque</a>
-                                    <p>
-                                        <a href="">Black</a>,
-                                        <a href="">300ML</a>
-                                    </p>
-                                    <p class="items__price pc-none show-mobile">$45</p>
+                <div class="having-products">
+                    <div class="cart__product">
+                        <ul class="cart__product-list">
+                        </ul>    
+                    </div>
+                    <div class="cart__checkout--container">
+                        <div class="cart__checkout">
+                            <div class="coupon-code">
+                                <span>Coupon Code: </span>
+                                <div class="coupon-code__input">
+                                    <input type="text" name="" id="" placeholder="Promotion code here">
+                                    <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
-                            
-                            <div class="items__right">
-                                <div class="items__quantify">
-                                    <button class="items__quantify--action"><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
-                                    <button class="items__quantify--action"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                                <a href="#" class="items__clear pc-none show-mobile">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </a>
-                            </div> 
-                            <p class="items__price hidden-mobile">$45</p>
-                            <a href="#" class="items__clear hidden-mobile">
-                                <i class="fa-regular fa-trash-can"></i>
-                            </a>
-                        </li>
-                        <li class="cart__product-items">
-                            <div class="items__container">
-                                <div class="items__img">
-                                    <img src="./acsset/img/item-minicart-2.jpg" alt="">
-                                </div>
-                                <div class="items__content">
-                                    <a class="items__content-name">Bibliotheque</a>
-                                    <p>
-                                        <a href="">Black</a>,
-                                        <a href="">300ML</a>
-                                    </p>
-                                    <p class="items__price pc-none show-mobile">$45</p>
-                                </div>
+                            <div class="total-price">
+                                <span>Total Price: </span>
+                                <span class="js-total">$95</span>
                             </div>
-                            
-                            <div class="items__right">
-                                <div class="items__quantify">
-                                    <button class="items__quantify--action"><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
-                                    <button class="items__quantify--action"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                                <a href="#" class="items__clear pc-none show-mobile">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </a>
-                            </div> 
-                            <p class="items__price hidden-mobile">$45</p>
-                            <a href="#" class="items__clear hidden-mobile">
-                                <i class="fa-regular fa-trash-can"></i>
-                            </a>
-                        </li>
-                        <li class="cart__product-items">
-                            <div class="items__container">
-                                <div class="items__img">
-                                    <img src="./acsset/img/item-minicart-2.jpg" alt="">
-                                </div>
-                                <div class="items__content">
-                                    <a class="items__content-name">Bibliotheque</a>
-                                    <p>
-                                        <a href="">Black</a>,
-                                        <a href="">300ML</a>
-                                    </p>
-                                    <p class="items__price pc-none show-mobile">$45</p>
-                                </div>
-                            </div>
-                            
-                            <div class="items__right">
-                                <div class="items__quantify">
-                                    <button class="items__quantify--action"><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
-                                    <button class="items__quantify--action"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                                <a href="#" class="items__clear pc-none show-mobile">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </a>
-                            </div> 
-                            <p class="items__price hidden-mobile">$45</p>
-                            <a href="#" class="items__clear hidden-mobile">
-                                <i class="fa-regular fa-trash-can"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="cart__checkout--container">
-                    <div class="cart__checkout">
-                        <div class="coupon-code">
-                            <span>Coupon Code: </span>
-                            <div class="coupon-code__input">
-                                <input type="text" name="" id="" placeholder="Promotion code here">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                        <div class="total-price">
-                            <span>Total Price: </span>
-                            <span>$95</span>
                         </div>
                     </div>
+                    <div class="group--btn flex-end">
+                        <a class="btn--primary btn--bg-white mg-r-10" href="shop.html">Continue shopping</a>
+                        <a class="btn--primary btn--bg-white" href="checkout.html">checkout</a>
+                    </div>
                 </div>
-                <div class="group--btn flex-end">
-                    <a class="btn--primary btn--bg-white mg-r-10" href="">Continue shopping</a>
-                    <a class="btn--primary btn--bg-white" href="checkout.html">checkout</a>
+                <div class="no-products d-none">
+                    <img src="./acsset/img/no-cart.png" alt="">
+                    <a class="btn--primary" href="shop.html">Continue shopping</a>
                 </div>
             </section>
         </div>
@@ -596,5 +512,7 @@
         </div>
     </div>
 </body>
+<script src="./acsset/js/addCart.js"></script>  
 <script src="./acsset/js/responsive.js"></script>
+<script src="./acsset/js/cart.js"></script>
 </html>

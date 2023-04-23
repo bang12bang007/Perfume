@@ -321,7 +321,7 @@ function renderDeal() {
                         <div class="product__action">
                             <a href="#"><i class="fa-regular fa-heart"></i></a>
                             <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <span onclick="addCart(${value.id})"><i class="fa-solid fa-bag-shopping"></i></span>
+                            <span onclick="addCart(${value.id}, 1)"><i class="fa-solid fa-bag-shopping"></i></span>
                         </div>
                     </div>
                     <div class="product__content">
@@ -379,7 +379,7 @@ function render(arr) {
                     <div class="product__action hidden-mobile">
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                         <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <span onclick="addCart(${value.id})"><i class="fa-solid fa-bag-shopping"></i></span>
+                        <span onclick="addCart(${value.id}, 1)"><i class="fa-solid fa-bag-shopping"></i></span>
                     </div>
                 </div>
                 <div class="product__content">
@@ -460,6 +460,7 @@ $('.deal__container').slick({
     });
 
 function renderModal(index) {
+    let i = index;
     let id = products.findIndex((value) => {
         return value.id == index;
     });
@@ -598,10 +599,10 @@ function renderModal(index) {
                             <div class="group--btn">
                                 <div class="detail__quantify--control mg-r-10 border-default ">
                                     <button class="detail__quantify--control-action"><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
+                                    <span class="q">1</span>
                                     <button class="detail__quantify--control-action"><i class="fa-solid fa-plus"></i></button>
                                 </div>
-                                <a  class="add-to-cart btn--primary" data-info=${id} href="">add to cart</a>
+                                <a class="btn--primary" onclick="addCart(${i}, document.querySelector('.q'))" href="#">add to cart</a>
                             </div>
                         </div>
                     </div>
