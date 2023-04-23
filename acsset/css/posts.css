@@ -1,5 +1,6 @@
 .posts__img {
     margin-bottom: 10px;
+    height: 450px;
 }
 
 .posts__img a {
@@ -10,6 +11,7 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    height: 100%;
 }
 
 .posts__link {
@@ -136,7 +138,7 @@
 }
 
 .related-articles__items {
-    width: 575px;
+    width: 570px;
     height: 277px;
     
 }
@@ -147,7 +149,7 @@
     align-items: center;
     height: 100%;
     border: 1px solid #f4f4f4;
-    max-width: 570px;
+    flex-wrap: wrap;
 }
 
 .related-articles__posts--img {
@@ -165,6 +167,7 @@
 .related-articles__posts--content {
     padding-left: 30px;
     padding-right: 10px;
+    flex: 1;
 }
 
 .related-articles  .posts__name > a{

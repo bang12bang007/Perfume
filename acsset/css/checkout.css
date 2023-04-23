@@ -34,16 +34,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 630px;
 }
 
 .form-control {
-    width: 305px;
+    width: 49%;
     margin-bottom: 30px;
 }
 
 .form-selection {
-    width: 200px;
+    width: 31%;
     margin-bottom: 30px;
 }
 
@@ -123,6 +122,7 @@
     opacity: 1;
     visibility: visible;
     transform: translate(0);
+    z-index: 1;
 }
 
 .your-order__list {
@@ -194,7 +194,7 @@
     width: 100%;
 }
 .pay-method .form-control input[type = "text"] {
-    width: 360px;
+    width: 100%;
     text-align: center;
 }
 

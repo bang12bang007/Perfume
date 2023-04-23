@@ -250,6 +250,48 @@ var products = [
     },
 ]
 
+var posts = [
+    {
+        id: 1,
+        src: './acsset/img/slider-blog-thumb-1.jpg',
+        title: "We bring you the best",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+    {
+        id: 2,
+        src: './acsset/img/slider-blog-thumb-2.jpg',
+        title: "We know that buying Items",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+    {
+        id: 3,
+        src: './acsset/img/slider-blog-thumb-3.jpg',
+        title: "We design functional Items",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+    {
+        id: 4,
+        src: './acsset/img/slider-blog-thumb-4.jpg',
+        title: "How to Build Your Perfect Dining",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+    {
+        id: 5,
+        src: './acsset/img/blog-item-list-5.jpg',
+        title: "New Designer Outdoor Items",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis culpa impedit eius?",
+        cate: "clothing"
+    },
+]
+
+localStorage.setItem('posts', JSON.stringify(posts));
+
+ 
+
 localStorage.setItem('products', JSON.stringify(products))
 
 const container = document.querySelector('.js-container-product');
@@ -327,14 +369,14 @@ renderDeal()
 function render(arr) {
     const html = arr.map((value, index) => {
         return `
-        <div class="col c-6 m-4 l-3">
+        <div class="col c-6 m-6 l-3">
             <div class="product">
                 <span class="product__label">New</span>
                 <div class="product__img-link">
                     <a href="#" class="product__img">
                         <img src="${value.img}" alt="">
                     </a>
-                    <div class="product__action">
+                    <div class="product__action hidden-mobile">
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                         <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <span onclick="addCart(${value.id})"><i class="fa-solid fa-bag-shopping"></i></span>
@@ -380,6 +422,73 @@ for(const category of categories) {
 
 categories[0].click();
 
+<<<<<<< HEAD
+=======
+const storedCart = JSON.parse(localStorage.getItem('cart'))
+var carts = storedCart ?? [];   
+
+const cartContainer = document.querySelector('.js-cart-container');
+const noProduct = document.querySelector('.no-product');
+const havingProduct = document.querySelector('.having-product');
+const cartQuantifies = document.querySelectorAll('.js-cart-quantify');
+const totalCart = document.querySelector('.cart-total-js');
+
+function updateCart() {
+    var totalQuantify = 0;
+    var totalPrice = 0;
+    if(carts.length > 0) {
+        havingProduct.classList.remove('d-none');
+        noProduct.classList.add('d-none');
+    }else {
+        havingProduct.classList.add('d-none');
+        noProduct.classList.remove('d-none');
+    }
+    var quantify = carts.map(val => {
+        totalQuantify += val.quantify;
+        totalPrice += val.quantify * val.price;
+    })
+    totalCart.innerHTML = "$"+totalPrice;
+    cartQuantifies.forEach(cartQuantify => {
+        cartQuantify.innerHTML = totalQuantify;
+    })
+}
+
+function renderCart() {
+    const html = carts.map((value, index) => {
+        return `
+        <li>
+            <div class="minicart__product">
+                <div class="minicart__product-img">
+                    <img src="${value.img}" alt="">
+                </div>
+                <div class="minicart__product-desc">
+                    <a class="minicart__product-name">${value.product_name}</a>
+                    <p>
+                        <a href="">Black</a>,
+                        <a href="">300ML</a>
+                    </p>
+                    <div class="minicart__product-act">
+                        <p>
+                            <span>$${value.price}</span>
+                            <span>(x${value.quantify})</span>
+                        </p>
+                        <a  onclick="clearProduct(${index})">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        `
+    })
+    updateCart();
+    cartContainer.innerHTML = html.join('');
+    localStorage.setItem('cart', JSON.stringify(carts))
+}   
+
+renderCart()
+
+>>>>>>> d8385e5906707aa03af0c0c64a1147a9035c69f0
 function findProduct(id, arr) {
     for(var i = 0; i < arr.length; i++) {
         if(arr[i].id == id) {
@@ -439,8 +548,8 @@ $('.deal__container').slick({
         {
         breakpoint: 1024,
         settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 2,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
         }
@@ -626,3 +735,75 @@ function renderModal(index) {
 function closeModal() {
     modal.classList.add('hidden_modal');
 }
+
+const listPosts = document.querySelector('.news__list');
+function renderPosts() {
+    const html = posts.map(value => {
+        return `
+        <li class="news__items">
+            <div class="news-posts__container">
+                <div class="news-posts__img">
+                    <img src="${value.src}" alt="">
+                </div>
+                <div class="news-posts__content">
+                    <p class="news-posts__content--time">
+                        <span>august 17</span>,
+                        <span>09:14 AM</span>
+                    </p>
+                    <a href="posts.html" onclick = "post(${value.id})" class="news-posts__content--title">${value.title}</a>
+                    <p class="news-posts__content--desc">${value.desc}</p>
+                    <a href="" class="banner--link">
+                        read more
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </li> 
+        `
+    })
+    listPosts.innerHTML = html.join('');
+}
+
+renderPosts();
+$('.news__list').slick({
+    dots: true,
+    infinite: false,
+    speed: 1200,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+        }
+    ]
+})
+
+function post(i) {
+    id = posts.findIndex(value =>{
+        return value.id == i;
+    })
+    localStorage.setItem('postItem', JSON.stringify(posts[id]));
+}
+
+
+
