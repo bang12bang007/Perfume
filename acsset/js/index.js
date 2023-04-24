@@ -598,11 +598,11 @@ function renderModal(index) {
                             </div>
                             <div class="group--btn">
                                 <div class="detail__quantify--control mg-r-10 border-default ">
-                                    <button class="detail__quantify--control-action"><i class="fa-solid fa-minus"></i></button>
+                                    <button onclick="reduce(document.querySelector('.q'))" class="detail__quantify--control-action"><i class="fa-solid fa-minus"></i></button>
                                     <span class="q">1</span>
-                                    <button class="detail__quantify--control-action"><i class="fa-solid fa-plus"></i></button>
+                                    <button onclick="increase(document.querySelector('.q'))" class="detail__quantify--control-action"><i class="fa-solid fa-plus"></i></button>
                                 </div>
-                                <a class="btn--primary" onclick="addCart(${i}, document.querySelector('.q'))" href="#">add to cart</a>
+                                <a class="btn--primary" onclick="addCart(${i}, parseInt(document.querySelector('.q').innerText))" href="#">add to cart</a>
                             </div>
                         </div>
                     </div>

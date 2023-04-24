@@ -84,7 +84,7 @@ function addCart(index, q) {
     let img = products[i].img
     let product_name = products[i].name
     let price = products[i].current_price
-    let quantify = 1;
+    let quantify = q;
     if(carts.length  == 0) {
         carts.push({
             id,

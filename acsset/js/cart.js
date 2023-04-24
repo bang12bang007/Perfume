@@ -36,11 +36,11 @@ function renderProductCart() {
             
             <div class="items__right">
                 <div class="items__quantify">
-                    <button class="items__quantify--action"><i class="fa-solid fa-minus"></i></button>
-                    <span>${value.quantify}</span>
-                    <button class="items__quantify--action"><i class="fa-solid fa-plus"></i></button>
+                    <button onclick="reduce(${value.id})" class="items__quantify--action"><i class="fa-solid fa-minus"></i></button>
+                    <span data-index=${value.id} class="js-q">${value.quantify}</span>
+                    <button onclick="increase(${value.id})" class="items__quantify--action"><i class="fa-solid fa-plus"></i></button>
                 </div>
-                <a href="#" class="items__clear pc-none show-mobile">
+                <a href="#" onclick="clearProduct(${index})" class="items__clear pc-none show-mobile">
                     <i class="fa-regular fa-trash-can"></i>
                 </a>
             </div> 
@@ -63,7 +63,44 @@ function clearProduct(index) {
     renderCart();
     renderProductCart();
     showProduct()
-    
+}
+
+const quantifies = document.querySelectorAll('.js-q');
+var q;
+function increase(id) {
+    quantifies.forEach(quantify => {
+        if(quantify.dataset.index == id) {
+            q = parseInt(quantify.innerHTML)
+            q++;
+            quantify.innerHTML = q;
+            let i = carts.findIndex(val => {
+                return val.id == id;
+            })
+            carts[i].quantify = q;
+            localStorage.setItem('cart', JSON.stringify(carts))
+        }
+    })
+    renderCart();
+    renderProductCart();
+}
+
+function reduce(id) {
+    quantifies.forEach(quantify => {
+        if(quantify.dataset.index == id) {
+            q = parseInt(quantify.innerHTML)
+            if(q > 1) {
+                q--;
+                quantify.innerHTML = q;
+            }
+            let i = carts.findIndex(val => {
+                return val.id == id;
+            })
+            carts[i].quantify = q;
+            localStorage.setItem('cart', JSON.stringify(carts))
+        }
+    })
+    renderCart();
+    renderProductCart();
 }
 
 

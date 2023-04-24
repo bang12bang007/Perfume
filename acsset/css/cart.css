@@ -21,6 +21,7 @@
 .items__container {
     display: flex;
     align-items: center;
+    width: 270px;
 }
 
 .items__img {
