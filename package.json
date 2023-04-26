@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "json-server": "^0.17.3",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
