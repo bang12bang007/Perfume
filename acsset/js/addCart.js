@@ -1,5 +1,18 @@
 const storedCart = JSON.parse(localStorage.getItem('cart'))
-var carts = storedCart ?? [];   
+var carts;  
+var user_id;
+var isLogin = false;
+// bây giờ mình sẽ làm như này 
+
+
+if(storedUser != null || storedUser != undefined) {
+    user_id = storedUser.id;
+    isLogin = true;
+    carts = storedUser.carts;
+}else {
+    user_id = 999999;
+    carts = storedCart ?? []
+}
 
 const cartContainer = document.querySelector('.js-cart-container');
 const noProduct = document.querySelector('.no-product');
@@ -28,8 +41,9 @@ function updateCart() {
     })
 }
 
-function renderCart() {
-    const html = carts.map((value, index) => {
+function renderCart(carts) {
+    var cart = carts ?? []
+    const html = cart.map((value, index) => {
         return `
         <li>
             <div class="minicart__product">
@@ -76,9 +90,10 @@ function clearProduct(index) {
     renderCart();
 }
 
-function addCart(index, q) {
+function pushCart(cart, index, q) {
+    var carts = cart ?? []
     let i = products.findIndex((value) => {
-        return value.id == index;
+    return value.id == index;
     });
     let id = index
     let img = products[i].img
@@ -93,7 +108,7 @@ function addCart(index, q) {
             price,
             quantify
         })
-        renderCart();
+        renderCart(carts);
     }
     else if(findProduct(id, carts) < 0) {
         carts.push({
@@ -103,10 +118,27 @@ function addCart(index, q) {
             price,
             quantify
         })
-        renderCart();
+        renderCart(carts);
     }
     else if(findProduct(id, carts) >= 0) {
         carts[findProduct(id, carts)].quantify += q;
-        renderCart();
+        renderCart(carts);
     }
+}
+
+function addCart(index, q) {
+    if(isLogin) {
+        pushCart(storedUser.carts, index, q)
+        console.log(storedUser);
+        putUsers(storedUser)
+    }else {
+        pushCart(carts, index, q)
+    }
+    
+}
+
+if(btnLogout != null || btnLogout != undefined) {
+    btnLogout.addEventListener('click', ()=> {
+        localStorage.setItem('cart', JSON.stringify([]))
+    })
 }

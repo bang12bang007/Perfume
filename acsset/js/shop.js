@@ -64,13 +64,14 @@ function renderProducts() {
 
 renderProducts()
 
+// per = 10
+// page = 3 min=20 max=30
+// max = per*page min = per*page-(min+per)
+
 function updatePage(i) {
     index = i
-    min = 0, max = per
-    let minTemp = max*index - (min+per)
-    let maxTemp = max*index - min
-    min = minTemp;
-    max = maxTemp;
+    min = per*index - per;
+    max = per*index;
     renderProducts()
     for(const paginationItem of paginationItems) {
         if(paginationItem == paginationItems[index-1]){

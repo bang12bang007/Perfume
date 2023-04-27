@@ -289,9 +289,6 @@ var posts = [
 ]
 
 localStorage.setItem('posts', JSON.stringify(posts));
-
- 
-
 localStorage.setItem('products', JSON.stringify(products))
 
 const container = document.querySelector('.js-container-product');

@@ -135,3 +135,9 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.error {
+    font-size: 14px;
+    display: block;
+    color: #ff00008c;
+}

@@ -65,12 +65,9 @@ renderPosts()
 
 function updatePage(i) {
     index = i
-    min = 0, max = per
-    let minTemp = max*index - (min+per)
-    let maxTemp = max*index - min
-    min = minTemp;
-    max = maxTemp;
-    renderPosts()
+    min = per*index - per;
+    max = per*index;
+    renderProducts()
     for(const paginationItem of paginationItems) {
         if(paginationItem == paginationItems[index-1]){
             paginationItems[index-1].classList.add('active_pagination')

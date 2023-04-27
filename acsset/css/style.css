@@ -834,131 +834,21 @@ body {
     z-index: 10;
 }
 
-.mini-login__tilte {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e3e3e3;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.mini-login__tilte label {
-    font-weight: 600;
-    font-size: 15px;
-    cursor: pointer;
-    color: #aaaaaa;
-}
-
-.mini-login__tilte label:hover {
-    color: #ab8e66;
-}
-
-.mini-login__tilte label:nth-child(1) {
-    margin-right: 20px;
-}
-
-.mini-login form {
-    padding: 14px 22px 0 22px;
-}
-
-.mini-login input{
-    border: 1px solid #e3e3e3;
-    border-radius: 99999px;
-    font-size: 14px;
-    padding: 12px 18px;
-    margin-bottom: 12px;
-    outline: none;
-}
-
-.mini-login input[type = "submit"] {
-    width: 100%;
-    background-color: #ab8e66;
-    color: #fff;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.mini-login input[type = "radio"] {
-    display: none;
-}
-
-.mini-login a {
-    padding: 20px;
-    display: inline-block;
-    padding-top: 8px;
+.mini-login > a {
     text-decoration: none;
-    color: #ab8e66;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.remember-me {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
-.remember-me label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #666666;
-}
-
-.remember-me span {
-    border: 1px solid #e3e3e3;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
-}
-
-.remember-me span i {
-    opacity: 0;
-    visibility: hidden;
-    font-size: 16px;
-    transition: .3s;
-}
-
-.remember-me:hover span i{
-    opacity: 1;
-    visibility: visible;
-}
-
-#remember {
-    display: none;
-}
-
-#remember:checked + span {
-    background-color: #ab8e66;
-}
-
-#remember:checked + span i {
-    opacity: 1;
-    visibility: visible;
-    color: #fff;
-}
-
-.mini-login__login{
-    display: none;
-}
-
-.mini-login__register {
-    display: none;
-}
-
-#login:checked ~ .mini-login__tilte > label:nth-child(1) {
-    color: #ab8e66;
-}
-
-#login:checked ~ .mini-login__login {
+    padding: 8px 10px;
     display: block;
+    color: #333;
+    transition: ease .3s;
+    width: 120px;
 }
 
-#register:checked ~ .mini-login__tilte > label:nth-child(2) {
+.mini-login > a:hover {
     color: #ab8e66;
 }
 
-#register:checked ~ .mini-login__register {
-    display: block;
+.mini-login > a + a {
+    border-top: 1px solid #eeeeee;
 }
 
 .nav__right-account:hover .mini-login{
