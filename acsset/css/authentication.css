@@ -20,9 +20,12 @@
 .social_acc{
     border: 1px solid #f1f1f1;
 }
-/* .login_acc  :hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-} */
+.login_container{
+    padding-bottom: 65px;
+}
+.conten_icon{
+    padding-bottom: 11px;
+}
 .social_acc h6{
     color: #aaa;
     font-family: inherit;
@@ -114,7 +117,7 @@
 }
 .register-button{
     padding-left: 40px;
-    padding-bottom: 5px;
+    padding-bottom: 16px;
 }
 .register-button input{
     display: inline-block;

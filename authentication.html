@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./acsset/css/authentication.css">
+    <link rel="stylesheet" href="./acsset/css/style.css">
+    <link rel="stylesheet" href="./acsset/css/gird.css">
+    <link rel="stylesheet" href="./acsset/font/fontawesome-free-6.2.1-web/css/all.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- header -->
+    <div id="wrapper">
+        <header class="header">
+            <div class="header--top">
+                <div class="gird wide">
+                    <div class="header-container__title">
+                        <p>Welcome to our online store!</p>
+                        <div class="header-container__title--right">
+                            <div class="language">
+                                <span>English (USD)</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul>
+                                    <li>
+                                        <a href="">French(EUR)</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Japanese(JPY)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="">
+                                Login or Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="gird wide">
+                <div class="header-container">
+                    <div class="header-nav">
+                        <div class="logo">
+                            <a href="">
+                                <img src="./acsset/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="nav__search">
+                            <input type="text" name="" id="" placeholder="Search here">
+                            <label for="cate" class="nav__search--cate">
+                                <span class="js-cate-content">Accessories</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                                <input type="checkbox" name="" id="cate">
+                                <ul>
+                                    <li class="js-cate-items">
+                                        <span>Accessories</span>
+                                    </li>
+                                    <li class="js-cate-items">
+                                        <span>Accents</span>
+                                    </li>
+                                    <li class="js-cate-items">
+                                        <span>Desks</span>
+                                    </li>
+                                    <li class="js-cate-items">
+                                        <span>Sofas</span>
+                                    </li>
+                                    <li class="js-cate-items">
+                                        <span>New Arrivals</span>
+                                    </li>
+                                    <li class="js-cate-items">
+                                        <span>Bedroom</span>
+                                    </li>
+                                </ul>
+                            </label>
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="nav__right">
+                            <div class="nav__right-cart">
+                                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <span class="js-cart-quantify">0</span>
+                                <div class="minicart having-product d-none">
+                                    <h4>Shopping Cart</h4>
+                                    <ul class="js-cart-container">
+                                        <li>
+                                            <div class="minicart__product">
+                                                <div class="minicart__product-img">
+                                                    <img src="./acsset/img/item-minicart-2.jpg" alt="">
+                                                </div>
+                                                <div class="minicart__product-desc">
+                                                    <a class="minicart__product-name">Bibliotheque</a>
+                                                    <p>
+                                                        <a href="">Black</a>,
+                                                        <a href="">300ML</a>
+                                                    </p>
+                                                    <div class="minicart__product-act">
+                                                        <p>
+                                                            <span>$45</span>
+                                                            <span>(x1)</span>
+                                                        </p>
+                                                        <a href="">
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="minicart__bottom">
+                                        <p>
+                                            <span>Subtotal:</span>
+                                            <span class="cart-total-js">$135</span>
+                                        </p>
+                                        <div class="group--btn">
+                                            <a class="btn--primary btn--bg-white flex-1 mg-r-10" href="">view bag</a>
+                                            <a class="btn--primary" href="">checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="minicart no-product">
+                                    <p>You have <span>0 ITEM(S)</span> in your bag</p>
+                                </div>
+                            </div>
+                            <div class="nav__right-account">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="mini-login">
+                                    <input type="radio" name="form" id="login" checked>
+                                    <input type="radio" name="form" id="register">
+                                    <div class="mini-login__tilte">
+                                        <label for="login">Login</label>
+                                        <label for="register">Register</label>
+                                    </div>
+                                    <div class="mini-login__login">
+                                        <form action="">
+                                            <input type="email" name="" id="" placeholder="Email">
+                                            <input type="password" name="" id="" placeholder="Password">
+                                            <label for="remember" class="remember-me">
+                                                <input type="checkbox" name="" id="remember">
+                                                <span>
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span>
+                                                <label for="remember">Remember me</label>
+                                            </label>
+                                            <input type="submit" value="LOGIN">
+                                        </form>
+                                        <a href="">Lost your password?</a>
+                                    </div>
+                                    <div class="mini-login__register">
+                                        <form action="">
+                                            <input type="email" name="" id="" placeholder="Email">
+                                            <input type="password" name="" id="" placeholder="Password">
+                                            <input type="submit" value="REGISTER">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="header__menu-container">
+                    <ul>
+                        <div class="menu-container__category">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>all category</span>
+                            <ul>
+                                <li>
+                                    <a href="">New Arrivals</a>
+                                </li>
+                                <li>
+                                    <a href="">Hot sale</a>
+                                </li>
+                                <li>
+                                    <a href="">Accessories</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu-sub">
+                                        <li>
+                                            <a href="">Living</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accents</a>
+                                        </li>
+                                        <li>
+                                            <a href="">New Arrivals</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Bedroom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Accents</a>
+                                </li>
+                                <li>
+                                    <a href="">Tables</a>
+                                </li>
+                                <li>
+                                    <a href="">Dining</a>
+                                </li>
+                                <li>
+                                    <a href="">Lighting</a>
+                                </li>
+                                <li>
+                                    <a href="">Office</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <li>
+                            <a href="index.html">home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">shop</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="blogs.html">blogs</a>
+                        </li>
+                        <li>
+                            <a href="about.html">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+    </div>
+    <!-- main -->
+    <div class="main">
+        <div class="gird wide ">
+            <div class="main__title">
+                        <a class="main__title--link" href="index.html">Home</a> 
+                        <span><i class="fa-solid fa-chevron-right"></i></span>
+                        <span class="mg-r-14 tranform-translateX-3"><i class="fa-solid fa-chevron-right"></i></span>
+                        <p class="main__title--current">Authentication</p>
+            </div>
+            <h3 class="custom--title">authentication</h3>
+            <div class="login_acc">
+                <div class="gird wide">
+                    <div class="col c-6 m-6 l-12">
+                       <div class="login_container">
+                            <h3>Login your Account</h3>
+                            <form class="login">
+                                <div class="social_acc">
+                                    <div class="conten_icon">
+                                        <h6>Login with social account</h6>
+                                    <a href="" class="icon_fb">
+                                        <i class="fa-brands fa-square-facebook"></i>
+                                        <span class="text">FaceBook</span>
+                                    </a>
+                                    <a href="" class="icon_twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <span class="text">Twitter</span>
+                                    </a>
+                                    </div>
+                                    <p class="from_row">
+                                        <label class="text" >Username</label> <br>
+                                        <input title="username" type="text" class="input_text" >
+                                    </p>
+                                    <p class="from_row">
+                                        <label class="text" >Password</label> <br>
+                                        <input title="password" type="password" class="input_text" >
+                                    </p>
+                                   <div class="btn_class">
+                                    <p class="lost_password">
+                                        <input type="checkbox" id="cb1">
+                                        <label for="cb1" class="label-text">Remember me</label>
+                                        <a href="" class="forget">Forgot password?
+                                        </a>
+                                    </p>
+                                   </div>
+                                   <div class="bnt_submit">
+                                    <p class="from-now">
+                                        <input type="submit" class="button_submit" value="login">
+                                    </p>
+                                   </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="gird wide">
+                    <div class="col c-6 m-6 l-12">
+                        <div class="login_container">
+                            <h3>Register now</h3>
+                            <form class="login">
+                                <div class="social_acc">
+                                    <p class="from_row">
+                                        <label class="text" >Your email</label> <br>
+                                        <input title="username" type="text" class="input_text" >
+                                    </p>
+                                    <p class="from_row">
+                                        <label class="text" >Username</label> <br>
+                                        <input title="username" type="text" class="input_text" >
+                                    </p>
+                                    <p class="from_row">
+                                        <label class="text" >Password</label> <br>
+                                        <input title="password" type="password" class="input_text" >
+                                    </p>
+                                    <div class="bnt_class">
+                                        <p class="lost_password">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1" class="label-text">I agree to Terms & Conditions</label>
+                                        </p>
+                                    </div>
+                                    <div class="bnt_submit">
+                                        <p class="register-button">
+                                            <input type="submit" class="button_submit" value="register now">
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer class="footer"> 
+        <div class="footer-container">
+            <div class="gird">
+                <div class="row">
+                    <div class="col c-12 m-4 l-3">
+                        <div class="footer-container__item">
+                            <h4>QUICK MENU</h4>
+                            <ul>
+                                <li><a href="">New arrivals</a></li>
+                                <li><a href="">Life style</a></li>
+                                <li><a href="">Accents</a></li>
+                                <li><a href="">Tables</a></li>
+                                <li><a href="">Dining</a></li>
+                            </ul>
+                        </div>     
+                    </div>
+                    <div class="col c-12 m-4 l-6">
+                        <div class="footer-container__item">
+                            <h4>NEWSELLETER</h4>
+                            <p>Sign up for our free video course and urban garden inspiration</p>
+                            <input class="input-sub" type="email" name="" id="" placeholder="Your email letter">
+                            <button class="btn-sub" >SUBCRIBE</button>
+                            <div class="sosial">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                            <span>Copyright © 2020 <a id="Stelina" href="">Stelina</a> . All rights reserved</span>
+                        </div>
+                    </div>
+                    <div class="col c-12 m-4 l-3">
+                        <div class="footer-container__item">
+                            <h4>INFORMATION</h4>
+                            <ul>
+                                <li><a href="">FAQs</a></li>
+                                <li><a href="">Track Order</a></li>
+                                <li><a href="">Delivery</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Return</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
