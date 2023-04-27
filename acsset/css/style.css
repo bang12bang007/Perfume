@@ -836,12 +836,11 @@ body {
 
 .mini-login > a {
     text-decoration: none;
-    padding: 8px;
-    padding-left: 10px;
-    padding-right: 40px;
+    padding: 8px 10px;
     display: block;
     color: #333;
     transition: ease .3s;
+    width: 120px;
 }
 
 .mini-login > a:hover {

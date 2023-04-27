@@ -1,5 +1,11 @@
 {
   "users": [
-    
+    {
+      "id": 7828,
+      "user_name": "khoa dep trai",
+      "email": "nguyenkhoadang135759@gmail.com",
+      "pass": "ngodangkhoa",
+      "carts": []
+    }
   ]
 }
