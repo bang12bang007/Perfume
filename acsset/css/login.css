@@ -20,7 +20,9 @@
 .social_acc{
     border: 1px solid #f1f1f1;
 }
-
+.login_container{
+    padding-bottom: 65px;
+}
 .conten_icon{
     padding-bottom: 11px;
 }
