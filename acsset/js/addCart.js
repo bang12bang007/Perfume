@@ -1,19 +1,5 @@
 const storedCart = JSON.parse(localStorage.getItem('cart'))
-var carts;  
-var user_id;
-var isLogin = false;
-// bây giờ mình sẽ làm như này 
-
-
-if(storedUser != null || storedUser != undefined) {
-    user_id = storedUser.id;
-    isLogin = true;
-    carts = storedUser.carts;
-}else {
-    user_id = 999999;
-    carts = storedCart ?? []
-}
-
+var carts = storedCart ?? [];  
 const cartContainer = document.querySelector('.js-cart-container');
 const noProduct = document.querySelector('.no-product');
 const havingProduct = document.querySelector('.having-product');
@@ -21,7 +7,7 @@ const cartQuantifies = document.querySelectorAll('.js-cart-quantify');
 const totalCart = document.querySelector('.cart-total-js');
 
 
-function updateCart() {
+function updateCart(carts) {
     var totalQuantify = 0;
     var totalPrice = 0;
     if(carts.length > 0) {
@@ -31,7 +17,7 @@ function updateCart() {
         havingProduct.classList.add('d-none');
         noProduct.classList.remove('d-none');
     }
-    var quantify = carts.map(val => {
+    carts.map(val => {
         totalQuantify += val.quantify;
         totalPrice += val.quantify * val.price;
     })
@@ -70,12 +56,12 @@ function renderCart(carts) {
         </li>
         `
     })
-    updateCart();
+    updateCart(cart);
     cartContainer.innerHTML = html.join('');
-    localStorage.setItem('cart', JSON.stringify(carts))
+    localStorage.setItem('cart', JSON.stringify(cart))
 }   
 
-renderCart()
+renderCart(carts)
 function findProduct(id, arr) {
     for(var i = 0; i < arr.length; i++) {
         if(arr[i].id == id) {
@@ -86,8 +72,14 @@ function findProduct(id, arr) {
 }
 
 function clearProduct(index) {
-    carts.splice(index, 1);
-    renderCart();
+    if(isLogin) {
+        storedUser.carts.splice(index, 1);
+        renderCart(storedUser.carts);
+        localStorage.setItem('user', JSON.stringify(storedUser))
+    }else {
+        carts.splice(index, 1);
+        renderCart(carts);
+    }
 }
 
 function pushCart(cart, index, q) {
@@ -129,16 +121,21 @@ function pushCart(cart, index, q) {
 function addCart(index, q) {
     if(isLogin) {
         pushCart(storedUser.carts, index, q)
-        console.log(storedUser);
-        putUsers(storedUser)
+        localStorage.setItem('user', JSON.stringify(storedUser))
     }else {
         pushCart(carts, index, q)
-    }
-    
+    }   
 }
+
+
 
 if(btnLogout != null || btnLogout != undefined) {
     btnLogout.addEventListener('click', ()=> {
+        isLogin = false;
         localStorage.setItem('cart', JSON.stringify([]))
     })
 }
+
+window.addEventListener('beforeunload', function() {
+    putUsers({carts: storedUser.carts}, storedUser.id);
+});

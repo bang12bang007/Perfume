@@ -16,7 +16,7 @@ function showProduct() {
 
 showProduct()
 
-function renderProductCart() {
+function renderProductCart(carts) {
     const html = carts.map((value, index) => {
         return `
         <li class="cart__product-items">
@@ -56,35 +56,63 @@ function renderProductCart() {
     total.innerHTML = totalCart.innerHTML;
 }
 
-renderProductCart()
+renderProductCart(carts)
 
 function clearProduct(index) {
-    carts.splice(index, 1);
-    renderCart();
-    renderProductCart();
+    if(isLogin) {
+        storedUser.carts.splice(index, 1);
+        renderCart(storedUser.carts);
+        renderProductCart(storedUser.carts);
+        localStorage.setItem('user', JSON.stringify(storedUser))
+    }else {
+        carts.splice(index, 1);
+        renderCart(carts);
+        renderProductCart(carts);
+    }
     showProduct()
 }
 
 const quantifies = document.querySelectorAll('.js-q');
 var q;
 function increase(id) {
+    var cart;
+    if(isLogin) {
+        cart = storedUser.carts 
+    }else {
+        cart = carts;
+    }
     quantifies.forEach(quantify => {
         if(quantify.dataset.index == id) {
             q = parseInt(quantify.innerHTML)
             q++;
             quantify.innerHTML = q;
-            let i = carts.findIndex(val => {
+            let i = cart.findIndex(val => {
                 return val.id == id;
             })
-            carts[i].quantify = q;
-            localStorage.setItem('cart', JSON.stringify(carts))
+            cart[i].quantify = q;
+            if(isLogin) {
+                localStorage.setItem('user', JSON.stringify(storedUser))
+            }else {
+                localStorage.setItem('cart', JSON.stringify(cart))
+            }
         }
     })
-    renderCart();
-    renderProductCart();
+    if(isLogin) {
+        renderCart(storedUser.carts);
+        renderProductCart(storedUser.carts);
+    }else {
+        renderCart(carts);
+        renderProductCart(carts);
+    }
 }
 
 function reduce(id) {
+    var cart;
+    if(isLogin) {
+        cart = storedUser.carts;
+    }else {
+        cart = carts;
+    }
     quantifies.forEach(quantify => {
         if(quantify.dataset.index == id) {
             q = parseInt(quantify.innerHTML)
@@ -99,8 +127,13 @@ function reduce(id) {
             localStorage.setItem('cart', JSON.stringify(carts))
         }
     })
-    renderCart();
-    renderProductCart();
+    if(isLogin) {
+        renderCart(storedUser.carts);
+        renderProductCart(storedUser.carts);
+    }else {
+        renderCart(carts);
+        renderProductCart(carts);
+    }
 }
 
 

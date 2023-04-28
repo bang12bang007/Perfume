@@ -19,10 +19,18 @@
 }
 .social_acc{
     border: 1px solid #f1f1f1;
+    max-height: 470px;
+    height: 470px;
 }
 .login_container{
-    padding-bottom: 65px;
+    margin-bottom: 65px;
+    transition: .3s;
 }
+
+.login_container:hover {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
 .conten_icon{
     padding-bottom: 11px;
 }
@@ -32,6 +40,7 @@
     letter-spacing: 0;
     font-size: 16px;
     padding: 25px 40px;
+    font-weight: 500;
 }
 .icon_fb{
     text-decoration: none;
@@ -76,6 +85,9 @@
     border-radius: 30px;
     background: none;
     border: 1px solid #eeeeee;
+    outline: none;
+    font-family: 'Jost', sans-serif;
+
 }
 .lost_password{
     padding: 20px 40px;
@@ -114,6 +126,8 @@
     border-radius: 30px;
     text-transform: uppercase;
     cursor: pointer;
+    outline: none;
+    font-family: 'Jost', sans-serif;
 }
 .register-button{
     padding-left: 40px;
@@ -133,6 +147,8 @@
     border-radius: 30px;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    outline: none;
 }
 
 .error {

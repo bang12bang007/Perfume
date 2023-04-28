@@ -63,11 +63,14 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 60px;
 }
 .icon_item{
     width: 25%;
-    height: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .icon_item i{
     font-size: 60px;
@@ -88,7 +91,7 @@
 }
 .line_height{
     width: 100%;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 .line_height span{
     line-height: 26px;
@@ -126,26 +129,43 @@
     color: #666;
     font-size: 14px;
 }
+
+.slick-next,
 .slick-prev{
   position: absolute;
   top: 50%;
-  left:0;
   transform: translateY(-50%);
   border: none;
   z-index: 1000;
-  background-color: white;
+  background-color: transparent;
+  font-size: 24px;
+  color: #888888;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
 }
+
+.slick-prev {
+    left: 20px;    
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.slick-next :hover
 .slick-prev :hover{
     color: #ab8e66;
 }
-.slick-next{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  border: none;
-  background-color: white;
-  }
-.slick-next :hover{
-    color: #ab8e66;
+
+.slick_item:hover .slick-prev{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.slick_item:hover .slick-next{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
 }

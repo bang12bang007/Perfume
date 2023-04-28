@@ -2,6 +2,7 @@ const storedUser = JSON.parse(localStorage.getItem('user'))
 const welcome = document.querySelector('.welcome');
 const userName = document.querySelector('.js-user-name')
 const logout = document.querySelector('.js-logout')
+var isLogin = false;
 if(storedUser != null || storedUser != undefined) {
     welcome.innerHTML = "Welcome " + storedUser.user_name;
     userName.innerHTML = "Welcome, " + storedUser.user_name;
@@ -9,7 +10,10 @@ if(storedUser != null || storedUser != undefined) {
     logout.innerHTML = "Logout"
     logout.classList.add('btn-logout')
     logout.href = "#";
+    isLogin = true;
+    localStorage.setItem('cart', JSON.stringify(storedUser.carts))
 }
+
 
 let usersApis = "http://localhost:3000/users"
 
@@ -35,18 +39,15 @@ function postUsers(data) {
     })
 }
 
-function putUsers(data) {
+function putUsers(data, id) {
     var option = {
-        method: "PUT",
+        method: "PATCH",
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
     };
-    fetch(usersApis, option).then(response => response.json())
-    .then(data => {
-        localStorage.setItem('user', JSON.stringify(data))
-    })
+    fetch(usersApis + `/${id}`, option).then(response => response.json())
 }
 
 function register() {
@@ -110,6 +111,6 @@ const btnLogout = document.querySelector('.btn-logout')
 if(btnLogout != null || btnLogout != undefined) {
     btnLogout.addEventListener('click', ()=> {
         localStorage.removeItem('user');
-        location.reload()
+        window.location.href = '/index.html'
     })
 }

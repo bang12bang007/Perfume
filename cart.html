@@ -32,7 +32,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="">
+                        <a class="welcome" href="authentication.html">
                             Login or Register
                         </a>
                     </div>
@@ -115,8 +115,8 @@
                                         <span class="cart-total-js">$135</span>
                                     </p>
                                     <div class="group--btn">
-                                        <a class="btn--primary btn--bg-white flex-1 mg-r-10" href="">view bag</a>
-                                        <a class="btn--primary" href="">checkout</a>
+                                        <a class="btn--primary btn--bg-white flex-1 mg-r-10" href="cart.html">view bag</a>
+                                        <a class="btn--primary" href="checkout.html">checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -127,34 +127,8 @@
                         <div class="nav__right-account hidden-mobile">
                             <i class="fa-regular fa-user"></i>
                             <div class="mini-login">
-                                <input type="radio" name="form" id="login" checked>
-                                <input type="radio" name="form" id="register">
-                                <div class="mini-login__tilte">
-                                    <label for="login">Login</label>
-                                    <label for="register">Register</label>
-                                </div>
-                                <div class="mini-login__login">
-                                    <form action="">
-                                        <input type="email" name="" id="" placeholder="Email">
-                                        <input type="password" name="" id="" placeholder="Password">
-                                        <label for="remember" class="remember-me">
-                                            <input type="checkbox" name="" id="remember">
-                                            <span>
-                                                <i class="fa-solid fa-check"></i>
-                                            </span>
-                                            <label for="remember">Remember me</label>
-                                        </label>
-                                        <input type="submit" value="LOGIN">
-                                    </form>
-                                    <a href="">Lost your password?</a>
-                                </div>
-                                <div class="mini-login__register">
-                                    <form action="">
-                                        <input type="email" name="" id="" placeholder="Email">
-                                        <input type="password" name="" id="" placeholder="Password">
-                                        <input type="submit" value="REGISTER">
-                                    </form>
-                                </div>
+                                <a class="js-user-name" href="Authentication.html">Login</a>
+                                <a class="js-logout" href="Authentication.html">Register</a>
                             </div>
                         </div>
                         <div class="nav__right-search pc-none show-mobile mg-r-20 js-modal-mobile">
@@ -512,6 +486,7 @@
         </div>
     </div>
 </body>
+<script src="./acsset/js/users.js"></script>
 <script src="./acsset/js/addCart.js"></script>  
 <script src="./acsset/js/responsive.js"></script>
 <script src="./acsset/js/cart.js"></script>
