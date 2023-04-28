@@ -61,3 +61,21 @@ back.onclick = () => {
         }
     })
 }
+
+const btnBackToTop = document.querySelector('.js-btn-btt');
+
+
+window.addEventListener('scroll', ()=> {
+    if(window.scrollY >= 949.5166015625) {
+        btnBackToTop.classList.remove('pc-none');
+    }else {
+        btnBackToTop.classList.add('pc-none');
+    }
+})
+
+btnBackToTop.addEventListener('click', ()=> {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+})
