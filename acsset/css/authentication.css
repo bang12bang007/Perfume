@@ -23,13 +23,9 @@
     height: 470px;
 }
 .login_container{
-<<<<<<< HEAD
     margin-bottom: 65px;
     transition: .3s;
-=======
-    padding-bottom: 65px;
     margin-right: 30px;
->>>>>>> f9c5b1c45cd7c74a5e7711bc0b2a7c748a981b93
 }
 
 .login_container:hover {
@@ -158,6 +154,5 @@
 
 .error {
     font-size: 14px;
-    display: block;
     color: #ff00008c;
 }
