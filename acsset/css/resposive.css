@@ -438,6 +438,12 @@
     .contact__form .form-group {
         flex: 100%; 
     }
+
+    .header-container {
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #eeeeee;
+    }
 }
 
 /* Tablet: width >= 740px and width < 1024px */
