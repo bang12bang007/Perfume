@@ -129,6 +129,14 @@
         visibility: visible;
     }
 
+    .input-sub {
+        padding: 9px;
+    }
+
+    .btn-sub {
+        padding: 11px;
+    }
+
 }
 
 /* Mobile and Tablet: width < 1024px */
@@ -425,6 +433,10 @@
 
     .slick-slide img {
         width: 100%
+    }
+
+    .deal__container .slick-slide {
+        margin: 0 4px;
     }
 
     .related-articles__posts--content {

@@ -34,7 +34,7 @@ function renderProducts() {
                         <a href="#" class="product__img">
                             <img src="${value.img}" alt="">
                         </a>
-                        <div class="product__action">
+                        <div class="product__action hidden-mobile">
                             <a href=""><i class="fa-regular fa-heart"></i></a>
                             <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
                             <span onclick="addCart(${value.id}, 1)"><i class="fa-solid fa-bag-shopping"></i></span>

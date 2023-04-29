@@ -315,7 +315,7 @@ function renderDeal() {
                         <a href="#" class="product__img">
                             <img src="${value.img}" alt="">
                         </a>
-                        <div class="product__action">
+                        <div class="product__action hidden-mobile">
                             <a href="#"><i class="fa-regular fa-heart"></i></a>
                             <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
                             <span onclick="addCart(${value.id}, 1)"><i class="fa-solid fa-bag-shopping"></i></span>
@@ -440,7 +440,7 @@ $('.deal__container').slick({
         breakpoint: 600,
         settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 1
         }
         },
         {
@@ -450,14 +450,14 @@ $('.deal__container').slick({
             slidesToScroll: 1
         }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
     });
 
+var isRenderModal = false
+
 function renderModal(index) {
     let i = index;
+    isRenderModal = true;
     let id = products.findIndex((value) => {
         return value.id == index;
     });
@@ -468,10 +468,13 @@ function renderModal(index) {
                 <div class="row">
                     <div class="col c-12 m-6 l-6">
                         <div class="detail__product--img">
-                            <img src="${products[id].img}" alt="">
+                            <img class="js-img" src="${products[id].img}" alt="">
                             <div class="detail__slider">
                                 <div class="slider__img--container">
                                     <ul class="img__slider">
+                                        <li class="img__slider--items active">
+                                            <img src="${products[id].img}" alt="">
+                                        </li>
                                         <li class="img__slider--items">
                                             <img src="${products[id].img}" alt="">
                                         </li>
@@ -613,6 +616,7 @@ function renderModal(index) {
     `
     modal.classList.remove('hidden_modal');
     modal.innerHTML = html;
+    slider()
 }
 
 function closeModal() {
@@ -667,7 +671,7 @@ $('.news__list').slick({
         {
         breakpoint: 600,
         settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1
         }
         },
@@ -687,6 +691,71 @@ function post(i) {
     })
     localStorage.setItem('postItem', JSON.stringify(posts[id]));
 }
+
+function slider() {
+    const btnPrevSlider = document.querySelector('.prev-img');
+    const btnNextSlider = document.querySelector('.next-img');
+    const sliderItems = document.querySelectorAll('.img__slider--items');
+    const sliderContainer = document.querySelector('.img__slider');
+    const img = document.querySelector('.js-img');
+
+    let maxPart = sliderItems.length - 2;
+    let part = 0;
+    var index = 0;
+
+    let style = window.getComputedStyle(sliderItems[1]);
+    let widthWithMargin = parseInt(style.getPropertyValue("width")) + parseInt(style.getPropertyValue("margin-left")) + parseInt(style.getPropertyValue("margin-right"));
+    
+    function updateItems(index, part) {
+        sliderItems.forEach((sliderItem) => {
+            sliderItem.classList.remove('active');
+        });
+        sliderItems[index].classList.add('active');
+        img.src = sliderItems[index].querySelector('img').src;
+        img.style.animation = 'bright ease-in-out .5s'
+        sliderContainer.style.transform = `translateX(-${widthWithMargin * part}px)`
+    }
+    
+    
+    btnPrevSlider.addEventListener('click', ()=> {
+        img.style.animation = ""
+        if(index > 0) {
+            index--;
+        }
+        if(part > 0) {
+            part--;
+        }
+        setTimeout(()=> {
+            updateItems(index, part);
+        },10)
+    })
+
+    btnNextSlider.addEventListener('click', ()=> {
+        img.style.animation = ""
+        if(index < sliderItems.length - 1) {
+            index ++;
+        }
+        if(part < maxPart-1) {
+            part++;
+        }
+        setTimeout(()=> {
+            updateItems(index, part);
+        },10)
+    })
+    
+    sliderItems.forEach( sliderItem=> {
+        img.style.animation = ""
+        sliderItem.onclick = ()=> {
+            for(var i = 0; i < sliderItems.length; i++) {
+                if(sliderItem == sliderItems[i]) index = i;
+            }
+            setTimeout(()=> {
+                updateItems(index, part);
+            },10)
+        }
+    })
+}
+
 
 
 
