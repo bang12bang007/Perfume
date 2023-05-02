@@ -156,3 +156,13 @@
     font-size: 14px;
     color: #ff00008c;
 }
+/* responsive gird */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 800px){
+    .login_acc,.login_container{
+        flex: 50%;
+    }
+}
