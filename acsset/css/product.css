@@ -56,6 +56,21 @@
 .tab_content{
     /* display: none; */
 }
+.comment_add{
+    margin-top: 40px;
+}
+.comment_add p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+}
+.notable p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+    margin-top: 30px;
+}
+
 .tabs_link > span{
     display: block;
     position: absolute;
@@ -74,4 +89,75 @@
 }
 .tabs_link :checked{
     color: red;
+}
+.start__comment{
+    display: flex;
+    margin: 5px 0;
+}
+.start__comment--item  a{
+    text-decoration: none;
+    color:#cccccc;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+.start__comment--item {
+    padding: 3px 10px 3px 0;
+}
+
+.start__comment--item  + .start__comment--item {
+    border-left:1px solid #cccccc;
+    padding-left: 10px;
+} 
+.start__comment--item:hover  a {
+    color: #ab8e66;
+}
+.comment__review p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+}
+.comment__review textarea {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #eeeeee;
+    outline: none;
+    padding: 11px 26px;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    color: #666;
+}
+.input_Name{
+    padding-bottom: 30px;
+}
+.record__name{
+    padding-top: 30px;
+}
+.record__name p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+}
+.record__name input{
+    padding:10px; 
+    width: 50%;
+    border-radius: 30px;
+    border: 1px solid #eeeeee;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+}
+.sub__btn input{
+    padding: 13px 30px;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #ab8e66;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 93px;
 }
