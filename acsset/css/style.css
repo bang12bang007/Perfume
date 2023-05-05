@@ -729,6 +729,7 @@ body {
     display: inline-block;
     color: #333333;
     transition: .3s;
+    text-decoration: none;
 }
 
 .minicart__product-desc p a{
@@ -1715,6 +1716,7 @@ body {
     opacity:0;
     visibility: hidden;
     transition: .3s;
+    box-shadow: 0 0 10px 1px #ccc;
 }
 
 .next-img {

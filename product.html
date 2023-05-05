@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <!-- Header -->
         <header class="header">
             <div class="header--top hidden-mobile">
@@ -298,9 +298,8 @@
                     <!-- tab_content -->
                     <div class="tab_content">
                         <div class="tab-pane active">
-                            <p>Quisque quis ipsum venenatis, fermentum ante volutpat, ornare enim. Phasellus molestie risus non aliquet cursus. Integer vestibulum mi lorem, id hendrerit ante lobortis non. Nunc ante ante, lobortis non pretium non, vulputate vel nisi. Maecenas dolor elit, fringilla nec turpis ac, auctor vulputate nulla. Phasellus sed laoreet velit.
-
-                                Proin fringilla urna vel mattis euismod. Etiam sodales, massa non tincidunt iaculis, mauris libero scelerisque justo, ut rutrum lectus urna sit amet quam. Nulla maximus vestibulum mi vitae accumsan.</p>
+                            <p>Quisque quis ipsum venenatis, fermentum ante volutpat, ornare enim. Phasellus molestie risus non aliquet cursus. Integer vestibulum mi lorem, id hendrerit ante lobortis non. Nunc ante ante, lobortis non pretium non, vulputate vel nisi. Maecenas dolor elit, fringilla nec turpis ac, auctor vulputate nulla. Phasellus sed laoreet velit.</p>
+                            <p>Proin fringilla urna vel mattis euismod. Etiam sodales, massa non tincidunt iaculis, mauris libero scelerisque justo, ut rutrum lectus urna sit amet quam. Nulla maximus vestibulum mi vitae accumsan.</p>
                         </div>
                         <div class="tab-pane">
                             <table class="table">
@@ -323,25 +322,93 @@
                                 <h2 class="review_title">1 REVIEW FOR GLORIOUS EAU</h2>
                                 <ol class="commentlist">
                                     <div class="comment-container">
-                                        <a class="img_comment" href="">
-                                            <img src="./acsset/img/avartar.png" alt="">
-                                        </a>
-                                        <div class="comment_text">
-                                            <div class="product__rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                        <div class="conmment__container--acc">
+                                            <a class="img_comment" href="">
+                                                <img src="./acsset/img/avartar.png" alt="">
+                                            </a>
+                                            <div class="acc--right">
+                                                <div class="comment_text">
+                                                    <div>
+                                                        <strong class="author">Cobus Bester</strong>
+                                                        <span>-</span>
+                                                        <span class="time">June 7, 2013</span>
+                                                    </div>
+                                                    <div class="product__rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="description">
+                                                    <p>Simple and effective design. One of my favorites.</p>
+                                                </div>
                                             </div>
-                                                <strong class="author">Cobus Bester</strong>
-                                                <span>-</span>
-                                                <span class="time">June 7, 2013</span>
                                         </div>
-                                        <div class="description">
-                                            <p>Simple and effective design. One of my favorites.</p>
+                                        <div class="comment_add">
+                                            <p class="comment_padding">ADD A REVIEW</p>
+                                            <div>
+                                                <p>Your email address will not be published. Required fields are marked *</p>
+                                            </div>
                                         </div>
-                                                
+                                        <div class="notable">
+                                            <p>Your rating</p>
+                                            <div class="start__comment">
+                                                <div class="start__comment--item">
+                                                    <a href="">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="start__comment--item">
+                                                    <a href="">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="start__comment--item">
+                                                    <a href="">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="start__comment--item">
+                                                    <a href="">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="start__comment--item">
+                                                    <a href="">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__review">
+                                            <p>Your review *</p>
+                                            <textarea name="" id="text__area" cols="30" rows="10"></textarea>
+                                        </div>
+                                        <div class="record__name">
+                                            <p>Name *</p>
+                                            <div class="input_Name">
+                                                <input type="text" value="">
+                                            </div>
+                                            <p>Email *</p>
+                                            <div class="input_Name">
+                                                <input type="text" value="">
+                                            </div>
+                                        </div>
+                                        <div class="sub__btn">
+                                            <input type="button" value="SUBMIT">
+                                        </div>
                                     </div>
                                 </ol>
                             </div>
@@ -353,6 +420,12 @@
                     <div class="gird">
                         <ul class="deal__container row">
                         </ul>
+                        <div class="prev-img prev control-slider-img">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="next-img next control-slider-img">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
                     </div>
                 </section>
             </div>    

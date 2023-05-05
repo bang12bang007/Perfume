@@ -5,6 +5,7 @@ const logout = document.querySelector('.js-logout')
 var isLogin = false;
 if(storedUser != null || storedUser != undefined) {
     welcome.innerHTML = "Welcome " + storedUser.user_name;
+    welcome.href = "#"
     userName.innerHTML = "Welcome, " + storedUser.user_name;
     userName.href = "#"
     logout.innerHTML = "Logout"

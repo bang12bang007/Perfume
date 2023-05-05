@@ -165,14 +165,13 @@ function slider(prev, next, sliderItem, slider, img_) {
     const sliderContainer = document.querySelector(`.${slider}`);
     const img = document.querySelector(`.${img_}`);
 
+
     let maxPart = sliderItems.length - 2;
     let part = 0;
     var index = 0;
-
-    let style = window.getComputedStyle(sliderItems[1]);
-    let widthWithMargin = parseInt(style.getPropertyValue("width")) + parseInt(style.getPropertyValue("margin-left")) + parseInt(style.getPropertyValue("margin-right"));
-    
     function updateItems(index, part) {
+        let style = window.getComputedStyle(sliderItems[1]);
+        let widthWithMargin = parseInt(style.getPropertyValue("width")) + parseInt(style.getPropertyValue("margin-left")) + parseInt(style.getPropertyValue("margin-right"));
         sliderItems.forEach((sliderItem) => {
             sliderItem.classList.remove('active');
         });
@@ -182,7 +181,24 @@ function slider(prev, next, sliderItem, slider, img_) {
         sliderContainer.style.transform = `translateX(-${widthWithMargin * part}px)`
     }
     
+    function setSizeSliderItems() {
+        sliderItems.forEach(sliderItem => {
+            sliderItem.style.width = img.clientWidth / 3.14 + "px";
+            sliderItem.style.height = img.clientWidth / 3.14 + "px";
+            if(parseInt(window.innerWidth) < 1200) {
+                sliderItem.style.width = img.clientWidth / 3.2 + "px";
+            sliderItem.style.height = img.clientWidth / 3.2 + "px";
+            }
+        })
+        updateItems(index, part)
+    }
     
+    setSizeSliderItems()
+
+    window.addEventListener('resize', () => {
+        setSizeSliderItems()
+    });
+
     btnPrevSlider.addEventListener('click', ()=> {
         img.style.animation = ""
         if(index > 0) {
@@ -309,8 +325,6 @@ renderAlsoLike()
 function renderModal(index) {
     let i = index;
     const modal = document.querySelector('.modal');
-
-    isRenderModal = true;
     let id = products.findIndex((value) => {
         return value.id == index;
     });
@@ -483,6 +497,8 @@ $('.deal__container').slick({
     speed: 1200,
     slidesToShow: 3,
     slidesToScroll: 1,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
     responsive: [
         {
         breakpoint: 1024,
@@ -508,10 +524,3 @@ $('.deal__container').slick({
         }
     ]
     });
-
-function postProduct(i) {
-    id = products.findIndex(value =>{
-        return value.id == i;
-    })
-    localStorage.setItem('productItem', JSON.stringify(products[id]));
-}

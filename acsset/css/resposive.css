@@ -193,6 +193,45 @@
     .wide {
         width: 95%;
     }
+    
+    .tabs_link {
+        margin: 0 16px;
+    }
+
+    .tabs_link p {
+        font-size: 14px;
+    }
+
+    .detail__products .detail__product--img {
+        max-width: 100%;
+    }
+
+    .detail__product--container {
+        padding: 0;
+        margin-top: 38px;
+    }
+
+    .record__name input {
+        width: 100%;
+    }
+    .sub__btn input {
+        width: 100%;
+    }
+
+    .detail__products .prev-img {
+        left: -8px
+    }
+    
+    .detail__products .next-img {
+        right: -8px
+    }
+    .detail__products:hover .prev-img {
+        left: -8px
+    }
+    
+    .detail__products:hover .next-img {
+        right: -8px
+    }
 
     .introduction__items {
         margin: 20px 0;

@@ -692,13 +692,6 @@ function post(i) {
     localStorage.setItem('postItem', JSON.stringify(posts[id]));
 }
 
-function postProduct(i) {
-    id = products.findIndex(value =>{
-        return value.id == i;
-    })
-    localStorage.setItem('productItem', JSON.stringify(products[id]));
-}
-
 function slider() {
     const btnPrevSlider = document.querySelector('.prev-img');
     const btnNextSlider = document.querySelector('.next-img');

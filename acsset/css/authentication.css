@@ -25,7 +25,6 @@
 .login_container{
     margin-bottom: 65px;
     transition: .3s;
-    margin-right: 30px;
 }
 
 .login_container:hover {
