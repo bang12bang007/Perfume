@@ -1803,15 +1803,15 @@ body {
     color: #ab8e66;
 }
 
-.detail__product--action .full {
+.add-to-wishlist .full {
     display:none;
 }
 
-.detail__product--action:hover .full {
+.add-to-wishlist:hover .full {
     display:inline;
 }
 
-.detail__product--action:hover .no-full {
+.add-to-wishlist:hover .no-full {
     display: none;
 }
 

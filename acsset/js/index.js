@@ -309,51 +309,51 @@ function renderDeal() {
         if(value.deal == true) {
             return `
                 <li class="deal__items">
-                <div class="product">
-                    <span class="product__label">New</span>
-                    <div class="product__img-link">
-                        <a href="#" class="product__img">
-                            <img src="${value.img}" alt="">
-                        </a>
-                        <div class="product__action hidden-mobile">
-                            <a href="#"><i class="fa-regular fa-heart"></i></a>
-                            <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <span onclick="addCart(${value.id}, 1)"><i class="fa-solid fa-bag-shopping"></i></span>
+                    <div class="product">
+                        <span class="product__label">New</span>
+                        <div class="product__img-link">
+                            <a href="product.html" onclick="postProduct(${value.id})" class="product__img">
+                                <img src="${value.img}" alt="">
+                            </a>
+                            <div class="product__action hidden-mobile">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <span onclick="renderModal(${value.id})"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <span onclick="addCart(${value.id}, 1)"><i class="fa-solid fa-bag-shopping"></i></span>
+                            </div>
+                        </div>
+                        <div class="product__content">
+                            <div class="product__time">
+                                <div class="product__time-items">
+                                    <span>00</span>
+                                    <span>days</span>
+                                </div>
+                                <div class="product__time-items">
+                                    <span>00</span>
+                                    <span>days</span>
+                                </div>
+                                <div class="product__time-items">
+                                    <span>00</span>
+                                    <span>days</span>
+                                </div>
+                                <div class="product__time-items">
+                                    <span>00</span>
+                                    <span>days</span>
+                                </div>
+                            </div>
+                            <h3 class="product__name">${value.name}</h3>
+                            <div class="product__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="product__price">
+                                <span class="product__price--old">$${value.old_price}</span>
+                                <span class="product__price--new">$${value.current_price}</span>
+                            </p>
                         </div>
                     </div>
-                    <div class="product__content">
-                        <div class="product__time">
-                            <div class="product__time-items">
-                                <span>00</span>
-                                <span>days</span>
-                            </div>
-                            <div class="product__time-items">
-                                <span>00</span>
-                                <span>days</span>
-                            </div>
-                            <div class="product__time-items">
-                                <span>00</span>
-                                <span>days</span>
-                            </div>
-                            <div class="product__time-items">
-                                <span>00</span>
-                                <span>days</span>
-                            </div>
-                        </div>
-                        <h3 class="product__name">${value.name}</h3>
-                        <div class="product__rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="product__price">
-                            <span class="product__price--old">$${value.old_price}</span>
-                            <span class="product__price--new">$${value.current_price}</span>
-                        </p>
-                    </div>
-                </div>
                 </li>
                 `
         }
@@ -370,7 +370,7 @@ function render(arr) {
             <div class="product">
                 <span class="product__label">New</span>
                 <div class="product__img-link">
-                    <a href="#" class="product__img">
+                    <a href="product.html" onclick="postProduct(${value.id})" class="product__img">
                         <img src="${value.img}" alt="">
                     </a>
                     <div class="product__action hidden-mobile">
@@ -692,6 +692,13 @@ function post(i) {
     localStorage.setItem('postItem', JSON.stringify(posts[id]));
 }
 
+function postProduct(i) {
+    id = products.findIndex(value =>{
+        return value.id == i;
+    })
+    localStorage.setItem('productItem', JSON.stringify(products[id]));
+}
+
 function slider() {
     const btnPrevSlider = document.querySelector('.prev-img');
     const btnNextSlider = document.querySelector('.next-img');
@@ -744,8 +751,8 @@ function slider() {
     })
     
     sliderItems.forEach( sliderItem=> {
-        img.style.animation = ""
         sliderItem.onclick = ()=> {
+            img.style.animation = ""
             for(var i = 0; i < sliderItems.length; i++) {
                 if(sliderItem == sliderItems[i]) index = i;
             }
