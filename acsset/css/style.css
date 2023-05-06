@@ -729,6 +729,7 @@ body {
     display: inline-block;
     color: #333333;
     transition: .3s;
+    text-decoration: none;
 }
 
 .minicart__product-desc p a{
@@ -1715,6 +1716,7 @@ body {
     opacity:0;
     visibility: hidden;
     transition: .3s;
+    box-shadow: 0 0 10px 1px #ccc;
 }
 
 .next-img {
@@ -1803,15 +1805,15 @@ body {
     color: #ab8e66;
 }
 
-.detail__product--action .full {
+.add-to-wishlist .full {
     display:none;
 }
 
-.detail__product--action:hover .full {
+.add-to-wishlist:hover .full {
     display:inline;
 }
 
-.detail__product--action:hover .no-full {
+.add-to-wishlist:hover .no-full {
     display: none;
 }
 

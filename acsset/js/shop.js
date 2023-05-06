@@ -31,7 +31,7 @@ function renderProducts() {
                 <div class="product">
                     <span class="product__label">New</span>
                     <div class="product__img-link">
-                        <a href="#" class="product__img">
+                        <a href="product.html" class="product__img" onclick="postProduct(${value.id})">
                             <img src="${value.img}" alt="">
                         </a>
                         <div class="product__action hidden-mobile">

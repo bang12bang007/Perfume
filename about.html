@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="./acsset/css/gird.css">
     <link rel="stylesheet" href="./acsset/css/style.css">
     <link rel="stylesheet" href="./acsset/font/fontawesome-free-6.2.1-web/css/all.css">
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
     <link rel="stylesheet"  href="./acsset/css/about.css">
     <link rel="stylesheet" href="./acsset/css/resposive.css">
     <title>Document</title>
@@ -292,33 +289,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="stelina_item">
-                            <div class="icon_item">
-                                <i class="fa-solid fa-rocket"></i>
-                                <div>
-                                    <h4>eu free delivery</h4>
-                                </div>
-                                <div>
-                                    <p>Free Delivery on all order from EU with price more than $90.00</p>
-                                </div>
-                            </div>
-                            <div class="icon_item">
-                                <i class="fa-solid fa-rotate-left"></i>
-                                <div>
-                                    <h4>money guarantee</h4>
-                                </div>
-                                <div>
-                                    <p>30 Days money back guarantee no question asked!</p>
+                    <div class="gird">
+                        <div class="stelina_item row">
+                            <div class="col c-12 m-4 l-4">
+                                <div class="icon_item">
+                                    <i class="fa-solid fa-rocket"></i>
+                                    <div>
+                                        <h4>eu free delivery</h4>
+                                    </div>
+                                    <div>
+                                        <p>Free Delivery on all order from EU with price more than $90.00</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="icon_item">
-                                <i class="fa-solid fa-lock"></i>
-                                <div>
-                                    <h4>eonline support 24/7</h4>
+                            <div class="col c-12 m-4 l-4">
+                                <div class="icon_item">
+                                    <i class="fa-solid fa-rotate-left"></i>
+                                    <div>
+                                        <h4>money guarantee</h4>
+                                    </div>
+                                    <div>
+                                        <p>30 Days money back guarantee no question asked!</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p>We’re here to support to you 24/7. Let’s shopping now!</p>
+                            </div>
+                            <div class="col c-12 m-4 l-4">
+                                <div class="icon_item">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <div>
+                                        <h4>eonline support 24/7</h4>
+                                    </div>
+                                    <div>
+                                        <p>We’re here to support to you 24/7. Let’s shopping now!</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -354,7 +357,6 @@
                             <p>CEO & Founder stelina Oufit</p>
                         </div>
                     </div>
-                </div>
                 </section>
             </div>
         </div>
@@ -467,7 +469,7 @@
             </ul>
         </div>
     </div>
-    <div class="modal__menu pc-none show-mobile-tab-2">
+    <div class="modal__menu pc-none show-mobile-tab">
         <div class="modal__menu--container">
             <div class="modal__menu--content">
                 <div class="content__title">
@@ -558,8 +560,32 @@
             slidesToScroll: 1,
             autoplay: false,
             autoplaySpeed: 2000,
-            prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-            nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            prevArrow:"<button type='button' class=' pull-left'><i class='fa fa-angle-left'></i></button>",
+            nextArrow:"<button type='button' class=' pull-right'><i class='fa fa-angle-right'></i></button>",
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
           });
       });
 </script>

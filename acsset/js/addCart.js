@@ -37,7 +37,7 @@ function renderCart(carts) {
                     <img src="${value.img}" alt="">
                 </div>
                 <div class="minicart__product-desc">
-                    <a class="minicart__product-name">${value.product_name}</a>
+                    <a href="product.html" onclick="postProduct(${value.id})" class="minicart__product-name">${value.product_name}</a>
                     <p>
                         <a href="">Black</a>,
                         <a href="">300ML</a>
@@ -139,3 +139,10 @@ if(btnLogout != null || btnLogout != undefined) {
 window.addEventListener('beforeunload', function() {
     putUsers({carts: storedUser.carts}, storedUser.id);
 });
+
+function postProduct(i) {
+    id = products.findIndex(value =>{
+        return value.id == i;
+    })
+    localStorage.setItem('productItem', JSON.stringify(products[id]));
+}

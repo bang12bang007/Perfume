@@ -2,6 +2,8 @@ const cartProductList = document.querySelector('.cart__product-list');
 const total =  document.querySelector('.js-total');
 const havingProducts = document.querySelector('.having-products');
 const noProducts = document.querySelector('.no-products');
+const storedProducts = JSON.parse(localStorage.getItem('products'));
+const products = storedProducts;
 
 function showProduct() {
     if(carts.length <= 0) {
@@ -25,7 +27,7 @@ function renderProductCart(carts) {
                     <img src="${value.img}" alt="">
                 </div>
                 <div class="items__content">
-                    <a class="items__content-name">${value.product_name}</a>
+                    <a href="product.html" onclick="postProduct(${value.id})" class="items__content-name">${value.product_name}</a>
                     <p>
                         <a href="">Black</a>,
                         <a href="">300ML</a>
@@ -72,8 +74,11 @@ function clearProduct(index) {
     showProduct()
 }
 
+
 const quantifies = document.querySelectorAll('.js-q');
 var q;
+
+
 function increase(id) {
     var cart;
     if(isLogin) {
@@ -135,6 +140,4 @@ function reduce(id) {
         renderProductCart(carts);
     }
 }
-
-
 
