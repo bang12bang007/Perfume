@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./acsset/css/login.css">
-    <link rel="stylesheet" href="./acsset/css/style.css">
     <link rel="stylesheet" href="./acsset/css/gird.css">
+    <link rel="stylesheet" href="./acsset/css/style.css">
     <link rel="stylesheet" href="./acsset/font/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="./acsset/css/authentication.css">
+    <link rel="stylesheet" href="./acsset/css/resposive.css">
     <title>Login</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a class="welcome" href="Authentication.html">
+                            <a class="welcome" href="authentication.html">
                                 Login or Register
                             </a>
                         </div>
@@ -114,8 +115,8 @@
                                             <span class="cart-total-js">$135</span>
                                         </p>
                                         <div class="group--btn">
-                                            <a class="btn--primary btn--bg-white flex-1 mg-r-10" href="">view bag</a>
-                                            <a class="btn--primary" href="">checkout</a>
+                                            <a class="btn--primary btn--bg-white flex-1 mg-r-10" href="cart.html">view bag</a>
+                                            <a class="btn--primary" href="checkout.html">checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -270,71 +271,78 @@
                 <h3 class="custom--title">authentication</h3>
                 <div class="login_acc">
                     <div class="gird wide">
-                        <div class="col c-6 m-6 l-12">
-                           <div class="login_container">
-                                <h3>Login your Account</h3>
-                                <div class="login">
-                                    <div class="social_acc">
-                                        <h6>Login with social account</h6>
-                                        <a href="" class="icon_fb">
-                                            <i class="fa-brands fa-square-facebook"></i>
-                                            <span class="text">FaceBook</span>
-                                        </a>
-                                        <a href="" class="icon_twitter">
-                                            <i class="fa-brands fa-twitter"></i>
-                                            <span class="text">Twitter</span>
-                                        </a>
-                                        <p class="from_row">
-                                            <label class="text">Email</label> <br>
-                                            <input title="username" name="email-login" type="text" name="" class="input_text" >
-                                        </p>
-                                        <p class="from_row">
-                                            <label class="text">Password</label> <br>
-                                            <input title="password" name="pass-login" type="password" class="input_text" >
-                                        </p>
-                                        <p class="lost_password">
-                                            <input type="checkbox" id="cb1">
-                                            <label for="cb1" class="label-text">Remember me</label>
-                                            <a href="" class="forget">Forgot password?
-                                            </a>
-                                        </p>
-                                        <p class="from-now">
-                                            <input type="submit" class="button_submit js-btn-login" value="login">
-                                        </p>
+                        <div class="row">
+                            <div class="col c-12 m-12 l-6">
+                                <div class="login_container">
+                                     <h3>Login your Account</h3>
+                                     <div class="login">
+                                         <div class="social_acc">
+                                             <div class="conten_icon">
+                                                 <h6>Login with social account</h6>
+                                             </div>
+                                             <a href="" class="icon_fb">
+                                                 <i class="fa-brands fa-square-facebook"></i>
+                                                 <span class="text">FaceBook</span>
+                                             </a>
+                                             <a href="" class="icon_twitter">
+                                                 <i class="fa-brands fa-twitter"></i>
+                                                 <span class="text">Twitter</span>
+                                             </a>
+                                             <p class="from_row">
+                                                 <label class="text" >Email</label>
+                                                 <input title="username" name="email-login" type="text" class="input_text" >
+                                             </p>
+                                             <p class="from_row">
+                                                 <label class="text" >Password</label>
+                                                 <input title="password" name="pass-login" type="password" class="input_text" >
+                                             </p>
+                                             <p class="lost_password">
+                                                 <input type="checkbox" id="cb1">
+                                                 <label for="cb1" class="label-text">Remember me</label>
+                                                 <a href="" class="forget">Forgot password?
+                                                 </a>
+                                             </p>
+                                             <p class="from-now">
+                                                 <input type="submit" class="button_submit js-btn-login" value="login">
+                                             </p>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col c-12 m-12 l-6">
+                                <div class="login_container">
+                                    <h3>Register now</h3>
+                                    <div class="login">
+                                        <div class="social_acc">
+                                            <span class="error d-none">Email đã tồn tại</span>
+                                            <p class="from_row">
+                                                <label class="text">Your email</label>
+                                                <input title="username" name="email-register" type="text" class="input_text" >
+                                                <small></small>
+                                            </p>
+                                            <p class="from_row">
+                                                <label class="text">Username</label>
+                                                <input title="username" name="userName-register" type="text" class="input_text" >
+                                                <small></small>
+                                            </p>
+                                            <p class="from_row">
+                                                <label class="text">Password</label>
+                                                <input title="password" name="pass-register" type="password" class="input_text" >
+                                                <small></small>
+                                            </p>
+                                            <p class="lost_password">
+                                                <input type="checkbox" id="cb1">
+                                                <label for="cb1" class="label-text">I agree to Terms & Conditions</label>
+                                            </p>
+                                           <div class="bnt_submit">
+                                            <p class="register-button">
+                                                <input type="submit" class="button_submit js-btn-register" value="register now">
+                                            </p>
+                                           </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
-                        </div>
-                    </div>
-                    <div class="gird wide">
-                        <div class="col c-12 m-12 l-12">
-                            <div class="login_container">
-                                <h3>Register now</h3>
-                                <div class="login">
-                                    <div class="social_acc">
-                                        <span class="error d-none">Email đã tồn tại</span>
-                                        <p class="from_row">
-                                            <label class="text">Your email</label> <br>
-                                            <input title="username" name="email-register" type="text" class="input_text" >
-                                        </p>
-                                        <p class="from_row">
-                                            <label class="text">Username</label> <br>
-                                            <input title="username" name="userName-register" type="text" class="input_text" >
-                                        </p>
-                                        <p class="from_row">
-                                            <label class="text">Password</label> <br>
-                                            <input title="password" name="pass-register" type="password" class="input_text" >
-                                        </p>
-                                        <p class="lost_password">
-                                            <input type="checkbox" id="cb1">
-                                            <label for="cb1" class="label-text">I agree to Terms & Conditions</label>
-                                        </p>
-                                        <p class="register-button">
-                                            <input type="submit" class="button_submit js-btn-register" value="register now">
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> 
                         </div>
                     </div>
                </div>
@@ -418,7 +426,119 @@
             </div>
         </footer>
     </div>
+    <div class="menu-mobile pc-none show-mobile">
+        <div class="menu-mobile__container">
+            <ul class="menu-mobile__container--list">
+                <li class="menu-mobile__container--items">
+                    <a class="link" href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="menu-mobile__container--items">
+                    <a class="link" href="">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Wishlist</span>
+                    </a>
+                </li>
+                <li class="menu-mobile__container--items">
+                    <a class="link" href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>    
+                        <span>Cart</span>
+                        <span class="quantify js-cart-quantify">0</span>
+                    </a>
+                </li>
+                <li class="menu-mobile__container--items">
+                    <a class="link" href="">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Account</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal__menu pc-none show-mobile-tab">
+        <div class="modal__menu--container">
+            <div class="modal__menu--content">
+                <div class="content__title">
+                    <i class="fa-solid fa-chevron-left back"></i>
+                    <p class="modal-title">main menu</p>
+                    <span>
+                        <i class="fa-solid fa-xmark js-close-menu-modal"></i>
+                    </span>
+                </div>
+                <ul class="content__list">
+                    <li>
+                        <a href="">New Arrivals</a>
+                    </li>
+                    <li>
+                        <a href="">Hot sale</a>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="">Accessories</a>
+                            <i class="fa-solid fa-chevron-right f-right js-more-cate"></i>
+                        </p>
+                        <ul class="menu-sub js-menu-sub">
+                            <li>
+                                <a href="">Living</a>
+                            </li>
+                            <li>
+                                <a href="">Accents</a>
+                            </li>
+                            <li>
+                                <a href="">New Arrivals</a>
+                            </li>
+                            <li>
+                                <a href="">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="">Bedroom</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Accents</a>
+                    </li>
+                    <li>
+                        <a href="">Tables</a>
+                    </li>
+                    <li>
+                        <a href="">Dining</a>
+                    </li>
+                    <li>
+                        <a href="">Lighting</a>
+                    </li>
+                    <li>
+                        <a href="">Office</a>
+                    </li>
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">shop</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="blogs.html">blogs</a>
+                    </li>
+                    <li>
+                        <a href="about.html">about</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top">
+        <button class="btn-btt js-btn-btt hidden-mobile pc-none">
+            <i class="fa-solid fa-chevron-up"></i>
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
 </body>
 <script src="./acsset/js/users.js"></script>
 <script src="./acsset/js/addCart.js"></script>
+<script src="./acsset/js/responsive.js"></script>
 </html>
